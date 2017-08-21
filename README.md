@@ -14,9 +14,15 @@ The Jest Plugins repo is managed as a monorepo that is composed of many npm pack
 
 ### Core Packages
 
-Plugin      | Version | Description
-------------|---------|------------
+Plugin | Version | Description
+-------|---------|------------
 [`jest-plugins`](/packages/jest-plugins) | [![npm](https://img.shields.io/npm/v/jest-plugins.svg)](https://www.npmjs.com/package/jest-plugins) | Adds the `plugins` feature to Jest.
+
+### Plugin Sets
+
+Plugin | Version | Description
+-------|---------|------------
+[`jest-plugins-recommended`](/packages/jest-plugins-recommended) | [![npm](https://img.shields.io/npm/v/jest-plugins-recommended.svg)](https://www.npmjs.com/package/jest-plugins-recommended) | Recommended set of jest plugins.
 
 ### Plugins
 
