@@ -2,6 +2,7 @@
 
 extends:
   - eslint:recommended
+  - jolt
 env:
   es6: true
   jest: true
