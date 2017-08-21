@@ -22,15 +22,10 @@
     "jest-plugin-context": "^1.0.0",
     "jest-plugin-its": "^1.0.0",
     "jest-plugin-set": "^1.0.0",
-    "jest-plugin-unhandled-promise": "^1.0.0"
+    "jest-plugin-unhandled-promise": "^1.0.0",
+    "jest-plugins": "^1.0.0"
   },
   "peerDependencies": {
-    "jest": "*",
-    "jest-plugins": "*"
-  },
-  "scripts": {
-    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
-    "clean": "rimraf build",
-    "prepublishOnly": "yarn run clean && yarn run build"
+    "jest": "*"
   }
 }
