@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-unhandled-promise",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "description": "Surfaces unhandled promise rejections in jest tests.",
   "license": "MIT",
   "main": "build/install",
@@ -21,10 +21,10 @@
     "jest": "*"
   },
   "devDependencies": {
-    "jest-plugin-action": "*",
-    "jest-plugin-console-matchers": "*",
-    "jest-plugin-context": "*",
-    "jest-plugin-set": "*"
+    "jest-plugin-action": "^0.3.0",
+    "jest-plugin-console-matchers": "^0.3.0",
+    "jest-plugin-context": "^0.3.0",
+    "jest-plugin-set": "^0.3.0"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
