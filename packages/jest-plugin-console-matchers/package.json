@@ -23,6 +23,10 @@
     "jest": "*",
     "jest-matchers": "*"
   },
+  "devDependencies": {
+    "jest-plugin-action": "*",
+    "jest-plugin-context": "*"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
     "clean": "rimraf build",
