@@ -20,7 +20,6 @@
     "jest-plugin-action",
     "jest-plugin-console-matchers",
     "jest-plugin-context",
-    "adsfa",
     "jest-plugin-its",
     "jest-plugin-set",
     "jest-plugin-unhandled-promise"
