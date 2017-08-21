@@ -27,6 +27,6 @@
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
     "clean": "rimraf build",
-    "prepublishOnly": "yarn clean && yarn build"
+    "prepublishOnly": "yarn run clean && yarn run build"
   }
 }
