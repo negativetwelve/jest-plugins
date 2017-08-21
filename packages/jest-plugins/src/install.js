@@ -4,6 +4,8 @@
  * found, it will throw an error.
  */
 export const install = (json) => {
+  // Sadly, because jest validates its config, we cannot add an additional
+  // key. We use a top-level 'jest-plugins' key instead.
   const plugins = json['jest-plugins'] || [];
 
   plugins.forEach(plugin => {
