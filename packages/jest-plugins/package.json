@@ -5,7 +5,8 @@
   "license": "MIT",
   "main": "build/install",
   "files": [
-    "build"
+    "build",
+    "setup.js"
   ],
   "keywords": [
     "jest",

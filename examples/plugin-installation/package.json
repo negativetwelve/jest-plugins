@@ -1,5 +1,5 @@
 {
-  "name": "jest-plugins-example-basic",
+  "name": "jest-plugins-example-plugin-installation",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
@@ -13,14 +13,7 @@
     "jest-plugins": "*"
   },
   "jest": {
-    "setupFiles": [
-      "jest-plugin-action/setup",
-      "jest-plugin-console-matchers/setup",
-      "jest-plugin-context/setup",
-      "jest-plugin-its/setup",
-      "jest-plugin-set/setup",
-      "jest-plugin-unhandled-promise/setup"
-    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-plugins.js",
     "testEnvironment": "node"
   }
 }

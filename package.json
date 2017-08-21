@@ -17,6 +17,7 @@
     "rimraf": "^2.6.1"
   },
   "workspaces": [
+    "examples/*",
     "packages/*"
   ],
   "lint-staged": {
@@ -27,13 +28,11 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "clean": "lerna run clean",
-    "examples:setup": "./tasks/setup-examples.sh",
-    "examples:test": "./tasks/test-examples.sh",
+    "clean": "lerna clean --yes && lerna run clean",
     "jolt": "node ./packages/jolt-cli",
-    "lint": "eslint packages",
+    "lint": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest packages",
+    "test": "jest --projects examples/* packages/*",
     "test:build": "yarn run build && yarn run test"
   }
 }
