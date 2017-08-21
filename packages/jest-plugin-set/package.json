@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-set",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Declarative JS tests with lazy evaluation using jest.",
   "license": "MIT",
   "main": "build/set",
