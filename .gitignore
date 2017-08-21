@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea
+*.sublime-workspace
+
+# General
+*.log
+
+# JS
+node_modules
+build
+coverage
