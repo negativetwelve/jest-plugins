@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-console-matchers",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Adds jest matchers for watching console methods.",
   "license": "MIT",
   "main": "build/matchers",
