@@ -28,10 +28,11 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "clean": "lerna run clean",
+    "clean": "lerna clean --yes && lerna run clean",
     "jolt": "node ./packages/jolt-cli",
-    "lint": "eslint packages",
+    "lint": "eslint .",
     "precommit": "lint-staged",
+    "setup": "yarn install && yarn run bootstrap",
     "test": "jest --projects examples/* packages/*",
     "test:build": "yarn run build && yarn run test"
   }

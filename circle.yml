@@ -8,7 +8,7 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
   override:
-    - yarn
+    - yarn run setup
     - yarn run clean
     - yarn run build
 
