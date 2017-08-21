@@ -1,5 +1,5 @@
 {
-  "name": "jest-plugins-example-plugin-installation",
+  "name": "jest-plugins-example-setup",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
