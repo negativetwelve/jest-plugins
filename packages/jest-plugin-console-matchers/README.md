@@ -20,8 +20,8 @@ Adds the following matchers which check for `console` methods to be called:
 
 | Matcher | Method |
 |---------|--------|
-| `toConsoleDebug` | `console.debug` |
 | `toConsoleError` | `console.error` |
+| `toConsoleInfo` | `console.info` |
 | `toConsoleLog` | `console.log` |
 | `toConsoleWarn` | `console.warn` |
 | `toThrowWarning` | `warning` |

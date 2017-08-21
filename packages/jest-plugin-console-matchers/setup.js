@@ -1,7 +1,7 @@
 const expect = require('jest-matchers');
 const {
-  toConsoleDebug,
   toConsoleError,
+  toConsoleInfo,
   toConsoleLog,
   toConsoleWarn,
   toThrowWarning,
@@ -10,8 +10,8 @@ const {
 
 // Injects custom matchers into jest.
 expect.extend({
-  toConsoleDebug,
   toConsoleError,
+  toConsoleInfo,
   toConsoleLog,
   toConsoleWarn,
   toThrowWarning,

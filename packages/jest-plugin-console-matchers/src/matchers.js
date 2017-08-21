@@ -24,8 +24,8 @@ export const createConsoleMatcher = (method) => (callback, message) => {
   }
 };
 
-export const toConsoleDebug = createConsoleMatcher('debug');
 export const toConsoleError = createConsoleMatcher('error');
+export const toConsoleInfo = createConsoleMatcher('info');
 export const toConsoleLog = createConsoleMatcher('log');
 export const toConsoleWarn = createConsoleMatcher('warn');
 

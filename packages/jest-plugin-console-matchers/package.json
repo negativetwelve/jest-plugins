@@ -18,7 +18,6 @@
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
   "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-console-matchers",
-  "dependencies": {},
   "peerDependencies": {
     "jest": "*",
     "jest-matchers": "*"
