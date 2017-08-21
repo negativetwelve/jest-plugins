@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-set",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "description": "Declarative JS tests with lazy evaluation using jest.",
   "license": "MIT",
   "main": "build/set",
@@ -20,8 +20,7 @@
   "homepage": "https://github.com/negativetwelve/jest-plugins",
   "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-set",
   "peerDependencies": {
-    "jest": "*",
-    "jest-plugins": "*"
+    "jest": "*"
   },
   "scripts": {
     "build": "rimraf build && yarn transpile",
