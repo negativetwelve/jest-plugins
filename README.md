@@ -1,5 +1,7 @@
 # Jest Plugins
 
+Augments `jest` with a `plugins` feature for easily adding extensions.
+
 ## Packages
 
 The Jest Plugins repo is managed as a monorepo that is composed of many npm packages.
