@@ -20,7 +20,8 @@
   "homepage": "https://github.com/negativetwelve/jest-plugins",
   "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-set",
   "peerDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "jest-plugins": "*"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",

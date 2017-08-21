@@ -22,7 +22,8 @@
     "jest-plugin-set": "^0.3.0"
   },
   "peerDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "jest-plugins": "*"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",

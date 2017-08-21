@@ -22,7 +22,8 @@
     "jest-plugin-set": "^0.3.0"
   },
   "peerDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "jest-plugins": "*"
   },
   "devDependencies": {
     "jest-plugin-context": "^0.3.0"

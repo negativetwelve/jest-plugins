@@ -18,7 +18,8 @@
   "homepage": "https://github.com/negativetwelve/jest-plugins",
   "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-unhandled-promise",
   "peerDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "jest-plugins": "*"
   },
   "devDependencies": {
     "jest-plugin-action": "^0.3.0",
