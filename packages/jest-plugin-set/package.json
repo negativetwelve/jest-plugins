@@ -1,0 +1,31 @@
+{
+  "name": "jest-plugin-set",
+  "version": "2.0.0",
+  "description": "Declarative JS tests with lazy evaluation using jest.",
+  "license": "MIT",
+  "main": "build/set",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "keywords": [
+    "declarative",
+    "jest",
+    "let",
+    "set",
+    "tdd",
+    "test"
+  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-set",
+  "peerDependencies": {
+    "jest": "*",
+    "jest-plugins": "*"
+  },
+  "scripts": {
+    "build": "rimraf build && yarn transpile",
+    "prepublishOnly": "yarn build",
+    "transpile": "babel src --out-dir build --ignore '**/*.spec.js'"
+  }
+}
