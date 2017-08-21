@@ -8,7 +8,10 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
   override:
-    - yarn setup
+    - yarn
+  post:
+    - yarn run clean
+    - yarn run build
 
 test:
   pre:
