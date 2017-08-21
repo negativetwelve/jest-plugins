@@ -4,12 +4,26 @@
   "private": true,
   "devDependencies": {
     "jest": "^20.0.4",
-    "jest-plugin-action": "*",
-    "jest-plugin-console-matchers": "*",
-    "jest-plugin-context": "*",
-    "jest-plugin-its": "*",
-    "jest-plugin-set": "*",
-    "jest-plugin-unhandled-promise": "*",
-    "jest-plugins": "*"
+    "jest-plugin-action": "file:../../packages/jest-plugin-action",
+    "jest-plugin-console-matchers": "file:../../packages/jest-plugin-console-matchers",
+    "jest-plugin-context": "file:../../packages/jest-plugin-context",
+    "jest-plugin-its": "file:../../packages/jest-plugin-its",
+    "jest-plugin-set": "file:../../packages/jest-plugin-set",
+    "jest-plugin-unhandled-promise": "file:../../packages/jest-plugin-unhandled-promise",
+    "jest-plugins": "file:../../packages/jest-plugins"
+  },
+  "jest": {
+    "setupFiles": [
+      "jest-plugin-action/setup",
+      "jest-plugin-console-matchers/setup",
+      "jest-plugin-context/setup",
+      "jest-plugin-its/setup",
+      "jest-plugin-set/setup",
+      "jest-plugin-unhandled-promise/setup"
+    ],
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }

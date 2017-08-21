@@ -17,7 +17,6 @@
     "rimraf": "^2.6.1"
   },
   "workspaces": [
-    "examples/*",
     "packages/*"
   ],
   "lint-staged": {
@@ -32,7 +31,8 @@
     "jolt": "node ./packages/jolt-cli",
     "lint": "eslint packages",
     "precommit": "lint-staged",
-    "test": "jest",
-    "test:build": "yarn run build && yarn run test"
+    "test": "jest packages",
+    "test:build": "yarn run build && yarn run test",
+    "test:examples": "./tasks/test-examples.sh"
   }
 }

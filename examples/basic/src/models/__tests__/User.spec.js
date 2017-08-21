@@ -22,13 +22,13 @@ describe('User', () => {
 
   describe('#sayHello', () => {
     it('should log hello', () => {
-      expect(user.sayHello).toConsoleLog();
+      expect(user.sayHello.bind(user)).toConsoleLog();
     });
   });
 
   describe('#sayHelloWithName', () => {
     it('should log hello and the user\'s name', () => {
-      expect(user.sayHelloWithName).toConsoleLog();
+      expect(user.sayHelloWithName.bind(user)).toConsoleLog();
     });
   });
 });
