@@ -17,6 +17,7 @@
     "rimraf": "^2.6.1"
   },
   "workspaces": [
+    "examples/*",
     "packages/*"
   ],
   "lint-staged": {

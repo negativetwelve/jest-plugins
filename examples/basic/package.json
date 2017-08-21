@@ -1,0 +1,15 @@
+{
+  "name": "jest-plugins-example-basic",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "jest-plugin-action": "*",
+    "jest-plugin-console-matchers": "*",
+    "jest-plugin-context": "*",
+    "jest-plugin-its": "*",
+    "jest-plugin-set": "*",
+    "jest-plugin-unhandled-promise": "*",
+    "jest-plugins": "*"
+  }
+}
