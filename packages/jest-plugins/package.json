@@ -1,0 +1,27 @@
+{
+  "name": "jest-plugins",
+  "version": "0.0.0",
+  "description": "Adds plugins support to jest.",
+  "license": "MIT",
+  "main": "build/install",
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "jest",
+    "jest-plugin",
+    "plugins",
+    "test"
+  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugins",
+  "peerDependencies": {
+    "jest": "*"
+  },
+  "scripts": {
+    "build": "rimraf build && yarn transpile",
+    "prepublishOnly": "yarn build",
+    "transpile": "babel src --out-dir build --ignore '**/*.spec.js'"
+  }
+}
