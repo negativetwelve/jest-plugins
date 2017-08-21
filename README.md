@@ -23,3 +23,4 @@ Plugin | Version | Description
 [`jest-plugin-context`](/packages/jest-plugin-context) | [![npm](https://img.shields.io/npm/v/jest-plugin-context.svg)](https://www.npmjs.com/package/jest-plugin-context) | Adds `context` as an alternative to `describe` for jest.
 [`jest-plugin-its`](/packages/jest-plugin-its) | [![npm](https://img.shields.io/npm/v/jest-plugin-its.svg)](https://www.npmjs.com/package/jest-plugin-its) | Adds `its` helper to quickly check `subject` properties.
 [`jest-plugin-set`](/packages/jest-plugin-set) | [![npm](https://img.shields.io/npm/v/jest-plugin-set.svg)](https://www.npmjs.com/package/jest-plugin-set) | Declaratively `set` your variables lazily. Implements `let` from RSpec.
+[`jest-plugin-unhandled-promise`](/packages/jest-plugin-unhandled-promise) | [![npm](https://img.shields.io/npm/v/jest-plugin-unhandled-promise.svg)](https://www.npmjs.com/package/jest-plugin-unhandled-promise) | Surfaces unhandled promise rejections in jest tests.
