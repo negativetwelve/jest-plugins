@@ -7,14 +7,16 @@ machine:
 dependencies:
   cache_directories:
     - ~/.cache/yarn
+  pre:
+    - yarn run clean
   override:
     - yarn
-  post:
-    - yarn run clean
     - yarn run build
+    - yarn run examples:setup
 
 test:
   pre:
     - yarn lint
   override:
     - yarn test
+    - yarn run examples:test
