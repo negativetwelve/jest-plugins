@@ -24,6 +24,9 @@
   "peerDependencies": {
     "jest": "*"
   },
+  "devDependencies": {
+    "jest-plugin-context": "*"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
     "clean": "rimraf build",
