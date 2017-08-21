@@ -17,7 +17,7 @@
   ],
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-action",
+  "repository": "negativetwelve/jest-plugins",
   "dependencies": {
     "jest-plugin-set": "^1.0.0"
   },
