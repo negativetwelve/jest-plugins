@@ -1,0 +1,31 @@
+{
+  "name": "jest-plugins-recommended",
+  "version": "0.0.0",
+  "description": "Recommended set of jest plugins.",
+  "license": "MIT",
+  "files": [
+    "setup.js"
+  ],
+  "keywords": [
+    "dx",
+    "jest",
+    "jest-plugins",
+    "plugins",
+    "test"
+  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugins-recommended",
+  "dependencies": {
+    "jest-plugin-action": "^1.0.0",
+    "jest-plugin-console-matchers": "^1.0.0",
+    "jest-plugin-context": "^1.0.0",
+    "jest-plugin-its": "^1.0.0",
+    "jest-plugin-set": "^1.0.0",
+    "jest-plugin-unhandled-promise": "^1.0.0",
+    "jest-plugins": "^1.0.0"
+  },
+  "peerDependencies": {
+    "jest": "*"
+  }
+}
