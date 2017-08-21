@@ -1,0 +1,32 @@
+{
+  "name": "jest-plugin-its",
+  "version": "0.0.1",
+  "description": "'subject' and 'its' implementations from RSpec in Jest.",
+  "license": "MIT",
+  "main": "build/index",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "keywords": [
+    "its",
+    "jest",
+    "subject",
+    "test"
+  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-its",
+  "dependencies": {
+    "invariant": "^2.2.2",
+    "jest-plugin-set": "^0.0.1"
+  },
+  "peerDependencies": {
+    "jest": "*"
+  },
+  "scripts": {
+    "build": "rimraf build && yarn transpile",
+    "prepublishOnly": "yarn build",
+    "transpile": "babel src --out-dir build --ignore '**/*.spec.js'"
+  }
+}
