@@ -18,11 +18,15 @@ Plugin | Version | Description
 -------|---------|------------
 [`jest-plugins`](/packages/jest-plugins) | [![npm](https://img.shields.io/npm/v/jest-plugins.svg)][npm-plugins] | Adds the `plugins` feature to Jest.
 
+[npm-plugins]: https://www.npmjs.com/package/jest-plugins
+
 ### Plugin Sets
 
 Plugin | Version | Description
 -------|---------|------------
 [`jest-plugins-recommended`](/packages/jest-plugins-recommended) | [![npm](https://img.shields.io/npm/v/jest-plugins-recommended.svg)][npm-recommended] | Recommended set of jest plugins.
+
+[npm-recommended]: https://www.npmjs.com/package/jest-plugins-recommended
 
 ### Plugins
 
@@ -35,13 +39,6 @@ Plugin | Version | Description
 [`jest-plugin-set`](/packages/jest-plugin-set) | [![npm](https://img.shields.io/npm/v/jest-plugin-set.svg)][npm-set] | Declaratively `set` your variables lazily. Implements `let` from RSpec.
 [`jest-plugin-unhandled-promise`](/packages/jest-plugin-unhandled-promise) | [![npm](https://img.shields.io/npm/v/jest-plugin-unhandled-promise.svg)][npm-unhandled-promise] | Surfaces unhandled promise rejections in jest tests.
 
-[/]: Core
-[npm-plugins]: https://www.npmjs.com/package/jest-plugins
-
-[/]: Plugin-Sets
-[npm-recommended]: https://www.npmjs.com/package/jest-plugins-recommended
-
-[/]: Plugins
 [npm-action]: https://www.npmjs.com/package/jest-plugin-action
 [npm-console-matchers]: https://www.npmjs.com/package/jest-plugin-console-matchers
 [npm-context]: https://www.npmjs.com/package/jest-plugin-context
