@@ -1,7 +1,7 @@
 // Modules
 import action from 'jest-plugin-action';
 import context from 'jest-plugin-context';
-import '../../setup';
+import 'jest-plugin-console-matchers/setup';
 
 
 /* eslint-disable no-undef */

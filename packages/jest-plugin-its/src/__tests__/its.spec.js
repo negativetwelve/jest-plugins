@@ -1,5 +1,5 @@
 // Modules
-import {its, subject} from '../';
+import {its, subject} from 'jest-plugin-its';
 
 
 describe('its', () => {

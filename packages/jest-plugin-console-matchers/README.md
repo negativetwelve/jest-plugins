@@ -31,11 +31,12 @@ Adds the following matchers which check for `console` methods to be called:
 If you want, you can import the matchers to install them in a set of tests.
 
 ```javascript
-import 'jest-plugin-console-matchers';
+import 'jest-plugin-console-matchers/setup';
 ```
 
 If you want to install the matchers globally, you can modify the jest section of your package.json to include:
 
+```json
 "jest": {
   "setupFiles": [
     "jest-plugin-console-matchers/setup"
@@ -48,7 +49,7 @@ If you want to install the matchers globally, you can modify the jest section of
 Example spec that uses these matchers.
 
 ```javascript
-import 'jest-plugin-console-matchers';
+import 'jest-plugin-console-matchers/setup';
 
 describe('User', () => {
   set('user', () => new User());
