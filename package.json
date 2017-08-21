@@ -29,8 +29,6 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna run clean",
-    "examples:setup": "./tasks/setup-examples.sh",
-    "examples:test": "./tasks/test-examples.sh",
     "jolt": "node ./packages/jolt-cli",
     "lint": "eslint packages",
     "precommit": "lint-staged",

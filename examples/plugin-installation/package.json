@@ -13,15 +13,7 @@
     "jest-plugins": "*"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "jest-plugins/setup",
+    "setupTestFrameworkScriptFile": "<rootDir>/jest-plugins.js",
     "testEnvironment": "node"
-  },
-  "jest-plugins": [
-    "jest-plugin-action",
-    "jest-plugin-console-matchers",
-    "jest-plugin-context",
-    "jest-plugin-its",
-    "jest-plugin-set",
-    "jest-plugin-unhandled-promise"
-  ]
+  }
 }
