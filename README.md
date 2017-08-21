@@ -1,5 +1,7 @@
 # Jest Plugins
 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/negativetwelve/jest-plugins/master.svg)](https://circleci.com/gh/negativetwelve/jest-plugins)
+
 Augments `jest` with a `plugins` feature for easily adding extensions.
 
 ## Packages
