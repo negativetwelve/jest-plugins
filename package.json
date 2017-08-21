@@ -20,12 +20,6 @@
     "examples/*",
     "packages/*"
   ],
-  "jest": {
-    "projects": [
-      "<rootDir>/examples/*",
-      "<rootDir>/packages/*"
-    ]
-  },
   "lint-staged": {
     "*.js": [
       "yarn lint"
@@ -40,7 +34,7 @@
     "jolt": "node ./packages/jolt-cli",
     "lint": "eslint packages",
     "precommit": "lint-staged",
-    "test": "jest",
+    "test": "jest --projects examples/* packages/*",
     "test:build": "yarn run build && yarn run test"
   }
 }

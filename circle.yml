@@ -12,11 +12,9 @@ dependencies:
   override:
     - yarn
     - yarn run build
-    - yarn run examples:setup
 
 test:
   pre:
     - yarn lint
   override:
     - yarn test
-    - yarn run examples:test

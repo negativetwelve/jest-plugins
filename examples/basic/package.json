@@ -22,8 +22,5 @@
       "jest-plugin-unhandled-promise/setup"
     ],
     "testEnvironment": "node"
-  },
-  "scripts": {
-    "test": "jest"
   }
 }
