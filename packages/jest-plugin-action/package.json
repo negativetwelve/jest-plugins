@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-action",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Declarative method for testing actions in jest.",
   "license": "MIT",
   "main": "build/action",
@@ -19,14 +19,14 @@
   "homepage": "https://github.com/negativetwelve/jest-plugins",
   "repository": "negativetwelve/jest-plugins",
   "dependencies": {
-    "jest-plugin-set": "^1.0.0"
+    "jest-plugin-set": "^1.2.0"
   },
   "peerDependencies": {
     "jest": "*",
     "jest-plugins": "*"
   },
   "devDependencies": {
-    "jest-plugin-context": "^1.0.0"
+    "jest-plugin-context": "^1.2.0"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
