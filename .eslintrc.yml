@@ -2,6 +2,7 @@
 
 extends:
   - eslint:recommended
+  - jolt
 env:
   es6: true
   jest: true
@@ -13,6 +14,7 @@ globals:
   # These globals are for specs. ESLint doesn't have a way to just whitelist
   # for .spec.js only.
   context: false
+  isExpected: false
   set: false
 rules:
   no-console: off

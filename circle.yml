@@ -9,6 +9,9 @@ dependencies:
     - ~/.cache/yarn
   override:
     - yarn
+  post:
+    - yarn run clean
+    - yarn run build
 
 test:
   pre:

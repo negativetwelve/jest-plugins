@@ -1,21 +1,26 @@
 {
-  "name": "jest-plugins",
+  "name": "jest-plugin-its",
   "version": "0.0.1",
-  "description": "Adds plugins support to jest.",
+  "description": "'subject' and 'its' implementations from RSpec in Jest.",
   "license": "MIT",
-  "main": "build/install",
+  "main": "build/index",
   "files": [
-    "build"
+    "build",
+    "setup.js"
   ],
   "keywords": [
+    "its",
     "jest",
-    "jest-plugin",
-    "plugins",
+    "subject",
     "test"
   ],
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-its",
+  "dependencies": {
+    "invariant": "^2.2.2",
+    "jest-plugin-set": "^0.0.1"
+  },
   "peerDependencies": {
     "jest": "*"
   },
