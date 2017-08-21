@@ -1,0 +1,34 @@
+{
+  "name": "jest-plugin-console-matchers",
+  "version": "0.0.0",
+  "description": "Adds jest matchers for watching console methods.",
+  "license": "MIT",
+  "main": "build/matchers",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "keywords": [
+    "console",
+    "jest",
+    "matchers",
+    "specs",
+    "test"
+  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-console-matchers",
+  "peerDependencies": {
+    "jest": "*",
+    "jest-matchers": "*"
+  },
+  "devDependencies": {
+    "jest-plugin-action": "*",
+    "jest-plugin-context": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}

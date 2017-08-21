@@ -19,7 +19,7 @@
   "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-its",
   "dependencies": {
     "invariant": "^2.2.2",
-    "jest-plugin-set": "^0.0.2"
+    "jest-plugin-set": "*"
   },
   "peerDependencies": {
     "jest": "*"

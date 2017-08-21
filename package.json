@@ -31,6 +31,7 @@
     "jolt": "node ./packages/jolt-cli",
     "lint": "eslint packages",
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "test:build": "yarn run build && yarn run test"
   }
 }
