@@ -1,4 +1,7 @@
 // Imports
+import action from 'jest-plugin-action';
+import context from 'jest-plugin-context';
+import set from 'jest-plugin-set';
 import install from 'jest-plugin-unhandled-promise';
 
 

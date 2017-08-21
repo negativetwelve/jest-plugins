@@ -21,7 +21,10 @@
     "jest": "*"
   },
   "devDependencies": {
-    "jest-plugin-console-matchers": "*"
+    "jest-plugin-action": "*",
+    "jest-plugin-console-matchers": "*",
+    "jest-plugin-context": "*",
+    "jest-plugin-set": "*"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
