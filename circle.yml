@@ -16,4 +16,6 @@ test:
   pre:
     - yarn lint
   override:
-    - yarn test
+    - yarn test:coverage
+  post:
+    - yarn coveralls
