@@ -1,0 +1,13 @@
+environment:
+  matrix:
+    - nodejs_version: 8
+
+cache:
+  - .eslintcache
+  - node_modules
+
+test_script:
+  - yarn run clean
+  - yarn run build
+  - yarn lint
+  - yarn test
