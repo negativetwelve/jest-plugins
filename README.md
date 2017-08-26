@@ -1,6 +1,7 @@
 # Jest Plugins
 
 [![CircleCI branch](https://img.shields.io/circleci/project/github/negativetwelve/jest-plugins/master.svg)](https://circleci.com/gh/negativetwelve/jest-plugins)
+[![Coverage Status](https://coveralls.io/repos/github/negativetwelve/jest-plugins/badge.svg?branch=master)](https://coveralls.io/github/negativetwelve/jest-plugins?branch=master)
 
 Adds plugins feature to jest for easily adding extensions.
 
