@@ -2,6 +2,8 @@ environment:
   matrix:
     - nodejs_version: 8
 
+build: off
+
 cache:
   - .eslintcache
   - node_modules
