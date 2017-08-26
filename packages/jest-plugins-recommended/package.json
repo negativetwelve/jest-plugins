@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-recommended",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Recommended set of jest plugins.",
   "license": "MIT",
   "files": [
