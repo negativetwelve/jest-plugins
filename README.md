@@ -26,8 +26,10 @@ Plugin | Version | Description
 Plugin | Version | Description
 -------|---------|------------
 [`jest-plugins-recommended`](/packages/jest-plugins-recommended) | [![npm](https://img.shields.io/npm/v/jest-plugins-recommended.svg)][npm-recommended] | Recommended set of jest plugins.
+[`jest-plugins-rspec`](/packages/jest-plugins-rspec) | [![npm](https://img.shields.io/npm/v/jest-plugins-rspec.svg)][npm-rspec] | Jest plugins for RSpec syntax.
 
 [npm-recommended]: https://www.npmjs.com/package/jest-plugins-recommended
+[npm-rspec]: https://www.npmjs.com/package/jest-plugins-rspec
 
 ### Plugins
 
