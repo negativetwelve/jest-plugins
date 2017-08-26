@@ -35,6 +35,6 @@
     "precommit": "lint-staged",
     "test": "jest --projects examples/* packages/*",
     "test:build": "yarn run build && yarn run test",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "yarn test -- --coverage"
   }
 }
