@@ -8,6 +8,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-jolt": "^2.6.4",
+    "coveralls": "^2.13.1",
     "eslint": "^4.4.1",
     "eslint-config-jolt": "^2.6.1",
     "husky": "^0.14.3",
@@ -29,9 +30,11 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "clean": "lerna clean --yes && lerna run clean",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "precommit": "lint-staged",
     "test": "jest --projects examples/* packages/*",
-    "test:build": "yarn run build && yarn run test"
+    "test:build": "yarn run build && yarn run test",
+    "test:coverage": "jest --coverage"
   }
 }
