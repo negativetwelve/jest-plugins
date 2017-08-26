@@ -3,9 +3,8 @@ import '../setup';
 
 
 /* eslint-disable no-undef */
-describe('jest-plugins-recommended', () => {
+describe('jest-plugins-rspec', () => {
   const globals = [
-    'action',
     'context',
     'its',
     'set',
