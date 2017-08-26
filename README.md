@@ -1,8 +1,9 @@
 # Jest Plugins
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/negativetwelve/jest-plugins/master.svg?label=circle)](https://circleci.com/gh/negativetwelve/jest-plugins)
-[![Build Status](https://travis-ci.org/negativetwelve/jest-plugins.svg?branch=master&label=travis)](https://travis-ci.org/negativetwelve/jest-plugins)
-[![Coverage Status](https://coveralls.io/repos/github/negativetwelve/jest-plugins/badge.svg?branch=master)](https://coveralls.io/github/negativetwelve/jest-plugins?branch=master)
+[![CircleCI](https://img.shields.io/circleci/project/github/negativetwelve/jest-plugins.svg?label=circle)](https://circleci.com/gh/negativetwelve/jest-plugins)
+[![Travis](https://img.shields.io/travis/negativetwelve/jest-plugins.svg?label=master)](https://travis-ci.org/negativetwelve/jest-plugins)
+[![AppVeyor](https://img.shields.io/appveyor/ci/negativetwelve/jest-plugins.svg?label=appveyor)](https://ci.appveyor.com/project/negativetwelve/jest-plugins)
+[![Coveralls](https://img.shields.io/coveralls/negativetwelve/jest-plugins.svg)](https://coveralls.io/github/negativetwelve/jest-plugins?branch=master)
 
 Adds plugins feature to jest for easily adding extensions.
 
