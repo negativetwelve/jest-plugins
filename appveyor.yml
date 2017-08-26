@@ -5,8 +5,6 @@ environment:
 install:
   - choco install yarn
   - yarn
-  - yarn run clean
-  - yarn run build
 
 cache:
   - .eslintcache
@@ -15,5 +13,7 @@ cache:
 build: off
 
 test_script:
+  - yarn run clean
+  - yarn run build
   - yarn lint
   - yarn test
