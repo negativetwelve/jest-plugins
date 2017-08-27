@@ -3,11 +3,9 @@
   "version": "1.2.0",
   "description": "Declarative method for testing actions in jest.",
   "license": "MIT",
-  "main": "build/action",
-  "files": [
-    "build",
-    "setup.js"
-  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-action",
   "keywords": [
     "action",
     "declarative",
@@ -15,9 +13,11 @@
     "tdd",
     "test"
   ],
-  "author": "Mark Miyashita <negativetwelve@gmail.com>",
-  "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "negativetwelve/jest-plugins",
+  "main": "build/action",
+  "files": [
+    "build",
+    "setup.js"
+  ],
   "dependencies": {
     "jest-plugin-set": "^1.2.0"
   },

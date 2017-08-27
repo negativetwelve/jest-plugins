@@ -3,20 +3,20 @@
   "version": "1.2.0",
   "description": "Adds plugins support to jest.",
   "license": "MIT",
-  "main": "build/install",
-  "files": [
-    "build",
-    "setup.js"
-  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugins",
   "keywords": [
     "jest",
     "jest-plugin",
     "plugins",
     "test"
   ],
-  "author": "Mark Miyashita <negativetwelve@gmail.com>",
-  "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "negativetwelve/jest-plugins",
+  "main": "build/install",
+  "files": [
+    "build",
+    "setup.js"
+  ],
   "peerDependencies": {
     "jest": "*"
   },

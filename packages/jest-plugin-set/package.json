@@ -3,11 +3,9 @@
   "version": "1.2.0",
   "description": "Declarative JS tests with lazy evaluation using jest.",
   "license": "MIT",
-  "main": "build/set",
-  "files": [
-    "build",
-    "setup.js"
-  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-set",
   "keywords": [
     "declarative",
     "jest",
@@ -16,9 +14,11 @@
     "tdd",
     "test"
   ],
-  "author": "Mark Miyashita <negativetwelve@gmail.com>",
-  "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "negativetwelve/jest-plugins",
+  "main": "build/set",
+  "files": [
+    "build",
+    "setup.js"
+  ],
   "peerDependencies": {
     "jest": "*",
     "jest-plugins": "*"
