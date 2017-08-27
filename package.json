@@ -12,20 +12,26 @@
     "eslint": "^4.4.1",
     "eslint-config-jolt": "^2.6.1",
     "husky": "^0.14.3",
-    "jest": "^20.0.4",
+    "jest": "^21.0.0-beta.1",
     "lerna": "^2.0.0",
     "lint-staged": "^4.0.3",
     "rimraf": "^2.6.1"
   },
-  "workspaces": [
-    "examples/*",
-    "packages/*"
-  ],
+  "jest": {
+    "projects": [
+      "examples/*",
+      "packages/*"
+    ]
+  },
   "lint-staged": {
     "*.js": [
       "yarn lint"
     ]
   },
+  "workspaces": [
+    "examples/*",
+    "packages/*"
+  ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
@@ -33,7 +39,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest --projects examples/* packages/*",
+    "test": "jest",
     "test:build": "yarn run build && yarn run test",
     "test:coverage": "yarn test -- --coverage"
   }
