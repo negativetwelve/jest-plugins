@@ -6,6 +6,10 @@
 
 Surfaces unhandled promise rejections in jest tests.
 
+## NOTE: This is unecessary in Jest 21+
+
+Jest 21 introduced unhandled promise handling natively within the framework. Therefore, this plugin is unnecessary.
+
 ## Getting Started
 
 Install `jest-plugin-unhandled-promise` using `yarn`:
