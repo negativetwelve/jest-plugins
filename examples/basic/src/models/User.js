@@ -16,14 +16,6 @@ class User {
     return `${this.getFirstName()} ${this.getLastName()}`;
   }
 
-  sayHello() {
-    console.log('Hello');
-  }
-
-  sayHelloWithName() {
-    console.log(`Hello my name is ${this.getName()}!`);
-  }
-
 }
 
 
