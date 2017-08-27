@@ -19,16 +19,4 @@ describe('User', () => {
       expect(user.getLastName()).toEqual('Wilson');
     });
   });
-
-  describe('#sayHello', () => {
-    it('should log hello', () => {
-      expect(user.sayHello.bind(user)).toConsoleLog();
-    });
-  });
-
-  describe('#sayHelloWithName', () => {
-    it('should log hello and the user\'s name', () => {
-      expect(user.sayHelloWithName.bind(user)).toConsoleLog();
-    });
-  });
 });

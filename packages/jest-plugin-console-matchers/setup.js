@@ -1,4 +1,3 @@
-const expect = require('jest-matchers');
 const {
   toConsoleError,
   toConsoleInfo,
