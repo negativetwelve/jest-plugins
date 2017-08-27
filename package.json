@@ -38,6 +38,7 @@
     "clean": "lerna clean --yes && lerna run clean",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint .",
+    "lint:cached": "yarn lint -- --cache",
     "precommit": "lint-staged",
     "test": "jest",
     "test:build": "yarn run build && yarn run test",

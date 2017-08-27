@@ -16,5 +16,5 @@ before_install:
 script:
   - yarn run clean
   - yarn run build
-  - yarn lint
+  - yarn lint:cached
   - yarn test

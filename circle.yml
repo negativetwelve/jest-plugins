@@ -14,7 +14,7 @@ dependencies:
 
 test:
   pre:
-    - yarn lint
+    - yarn lint:cached
   override:
     - yarn test:coverage
   post:
