@@ -6,10 +6,12 @@ import install from 'jest-plugin-unhandled-promise';
 
 
 /* eslint-disable no-undef */
-describe('unhandled promise', () => {
+describe.skip('unhandled promise', () => {
   action('createUnhandledPromise', () => new Promise((resolve, reject) => {
     // Inner promise is the unhandled one.
-    new Promise((resolve, reject) => reject(new Error('unhandled error')));
+    new Promise((resolve, reject) => {
+      reject(new Error('this is an unhandled error'));
+    });
 
     // HACK(mark): Need to do this on the next tick, hence the setTimeout.
     setTimeout(resolve, 0);
