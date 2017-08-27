@@ -3,19 +3,19 @@
   "version": "1.2.0",
   "description": "Adds context as an alternative to describe to jest.",
   "license": "MIT",
-  "main": "build/context",
-  "files": [
-    "build",
-    "setup.js"
-  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-context",
   "keywords": [
     "context",
     "jest",
     "test"
   ],
-  "author": "Mark Miyashita <negativetwelve@gmail.com>",
-  "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "negativetwelve/jest-plugins",
+  "main": "build/context",
+  "files": [
+    "build",
+    "setup.js"
+  ],
   "peerDependencies": {
     "jest": "*",
     "jest-plugins": "*"

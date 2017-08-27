@@ -3,20 +3,20 @@
   "version": "1.2.0",
   "description": "'subject' and 'its' implementations from RSpec in Jest.",
   "license": "MIT",
-  "main": "build/index",
-  "files": [
-    "build",
-    "setup.js"
-  ],
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-its",
   "keywords": [
     "its",
     "jest",
     "subject",
     "test"
   ],
-  "author": "Mark Miyashita <negativetwelve@gmail.com>",
-  "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "negativetwelve/jest-plugins",
+  "main": "build/index",
+  "files": [
+    "build",
+    "setup.js"
+  ],
   "dependencies": {
     "invariant": "^2.2.2",
     "jest-plugin-set": "^1.2.0"
