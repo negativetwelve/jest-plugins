@@ -2,6 +2,7 @@
 import {its, subject} from 'jest-plugin-its';
 
 
+/* eslint-disable no-undef */
 describe('its', () => {
   describe('with primitives', () => {
     subject(() => ({a: 1, b: 2}));

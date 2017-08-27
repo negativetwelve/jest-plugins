@@ -9,7 +9,7 @@
 *.log
 
 # JS
-node_modules
+.eslintcache
 build
 coverage
-.eslintcache
+node_modules
