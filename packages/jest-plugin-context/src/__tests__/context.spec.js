@@ -1,5 +1,5 @@
 // Modules
-import context from 'jest-plugin-context';
+import context from '../context';
 
 
 describe('context', () => {
