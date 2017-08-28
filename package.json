@@ -18,7 +18,14 @@
     "rimraf": "^2.6.1"
   },
   "babel": {
-    "presets": [["jolt", {"target": "node"}]]
+    "presets": [
+      [
+        "jolt",
+        {
+          "target": "node"
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "extends": "jolt"
