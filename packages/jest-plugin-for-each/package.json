@@ -1,7 +1,7 @@
 {
   "name": "jest-plugin-for-each",
   "version": "0.0.0",
-  "description": "Jest helper to test multiple values for a single outcome.",
+  "description": "Jest plugin to test multiple values for a single outcome.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
