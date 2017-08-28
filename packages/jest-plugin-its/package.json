@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-its",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "'subject' and 'its' implementations from RSpec in Jest.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -19,7 +19,7 @@
   ],
   "dependencies": {
     "invariant": "^2.2.2",
-    "jest-plugin-set": "^1.3.0"
+    "jest-plugin-set": "^1.4.0"
   },
   "peerDependencies": {
     "jest": "*",
