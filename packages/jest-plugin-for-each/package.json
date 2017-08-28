@@ -1,0 +1,34 @@
+{
+  "name": "jest-plugin-for-each",
+  "version": "0.0.0",
+  "description": "Jest helper to test multiple values for a single outcome.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-for-each",
+  "keywords": [
+    "declarative",
+    "jest",
+    "let",
+    "set",
+    "tdd",
+    "test"
+  ],
+  "main": "build/forEach",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "dependencies": {
+    "jest-plugin-set": "*"
+  },
+  "peerDependencies": {
+    "jest": "*",
+    "jest-plugins": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
