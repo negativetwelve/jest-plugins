@@ -20,6 +20,7 @@
     "setup.js"
   ],
   "dependencies": {
+    "invariant": "^2.2.2",
     "jest-plugin-set": "*"
   },
   "peerDependencies": {
