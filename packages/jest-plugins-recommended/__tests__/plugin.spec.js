@@ -7,6 +7,7 @@ describe('jest-plugins-recommended', () => {
   const globals = [
     'action',
     'context',
+    'forEach',
     'its',
     'set',
     'subject',
