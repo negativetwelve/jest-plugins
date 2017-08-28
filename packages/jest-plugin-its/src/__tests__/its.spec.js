@@ -1,5 +1,6 @@
 // Modules
-import {its, subject} from 'jest-plugin-its';
+import its from '../its';
+import subject from '../subject';
 
 
 /* eslint-disable no-undef */

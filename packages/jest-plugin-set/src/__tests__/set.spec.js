@@ -1,5 +1,5 @@
 // Modules
-import set from 'jest-plugin-set';
+import set from '../set';
 
 
 /* eslint-disable no-undef */

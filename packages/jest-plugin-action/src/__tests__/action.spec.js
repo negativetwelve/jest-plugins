@@ -1,7 +1,7 @@
 // Libraries
 import context from 'jest-plugin-context';
 import set from 'jest-plugin-set';
-import action from 'jest-plugin-action';
+import action from '../action';
 
 
 /* eslint-disable no-undef */
