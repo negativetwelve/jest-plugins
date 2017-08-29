@@ -20,6 +20,7 @@
     "setup.js"
   ],
   "dependencies": {
+    "mockdate": "^2.0.2"
   },
   "peerDependencies": {
     "jest": "*",
