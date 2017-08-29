@@ -6,6 +6,7 @@ import '../setup';
 describe('jest-plugins-recommended', () => {
   const globals = [
     'action',
+    'clock',
     'context',
     'forEach',
     'its',
