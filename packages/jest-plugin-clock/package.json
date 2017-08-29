@@ -14,7 +14,7 @@
     "time",
     "test"
   ],
-  "main": "build/forEach",
+  "main": "build/clock",
   "files": [
     "build",
     "setup.js"
