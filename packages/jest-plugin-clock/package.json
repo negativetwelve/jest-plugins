@@ -1,0 +1,37 @@
+{
+  "name": "jest-plugin-clock",
+  "version": "0.0.0",
+  "description": "Jest plugin to mock dates, times, and datetimes.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-clock",
+  "keywords": [
+    "clock",
+    "date",
+    "datetime",
+    "jest",
+    "time",
+    "test"
+  ],
+  "main": "build/clock",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "dependencies": {
+    "mockdate": "^2.0.2"
+  },
+  "peerDependencies": {
+    "jest": "*",
+    "jest-plugins": "*"
+  },
+  "devDependencies": {
+    "jest-plugin-context": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
