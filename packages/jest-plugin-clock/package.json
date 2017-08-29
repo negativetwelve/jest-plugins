@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-clock",
-  "version": "0.0.0",
+  "version": "1.6.0",
   "description": "Jest plugin to mock dates, times, and datetimes.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
