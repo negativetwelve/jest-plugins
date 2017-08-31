@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-jolt": "^2.6.4",
+    "babel-preset-jolt": "^2.8.0",
     "coveralls": "^2.13.1",
     "eslint": "^4.4.1",
     "eslint-config-jolt": "^2.6.1",
@@ -22,7 +22,8 @@
       [
         "jolt",
         {
-          "target": "node"
+          "target": "node",
+          "react": true
         }
       ]
     ]
