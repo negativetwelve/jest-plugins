@@ -1,0 +1,31 @@
+{
+  "name": "jest-plugin-it-renders",
+  "version": "1.7.1",
+  "description": "Jest plugin to quickly test if a React component renders.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-it-renders",
+  "keywords": [
+    "component",
+    "jest",
+    "react",
+    "render",
+    "snapshot",
+    "test"
+  ],
+  "main": "build/itRenders",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "peerDependencies": {
+    "jest": "*",
+    "jest-plugins": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
