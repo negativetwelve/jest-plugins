@@ -24,7 +24,8 @@
   },
   "peerDependencies": {
     "jest": "*",
-    "jest-plugins": "*"
+    "jest-plugins": "*",
+    "react": "*"
   },
   "devDependencies": {
     "react": "^15.6.1"
