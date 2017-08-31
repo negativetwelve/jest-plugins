@@ -19,9 +19,15 @@
     "build",
     "setup.js"
   ],
+  "dependencies": {
+    "react-test-renderer": "^15.6.1"
+  },
   "peerDependencies": {
     "jest": "*",
     "jest-plugins": "*"
+  },
+  "devDependencies": {
+    "react": "^15.6.1"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
