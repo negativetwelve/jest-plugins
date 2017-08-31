@@ -30,8 +30,13 @@
   "devDependencies": {
     "react": "^15.6.1"
   },
+  "babel": {
+    "ignore": [
+      "**/__tests__/**"
+    ]
+  },
   "scripts": {
-    "build": "babel src --out-dir build --ignore '**/*.spec.js'",
+    "build": "babel src --out-dir build",
     "clean": "rimraf build",
     "prepublishOnly": "yarn run clean && yarn run build"
   }
