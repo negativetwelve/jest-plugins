@@ -2,11 +2,12 @@
   "folders":
   [
     {
-      "path": "../",
+      "path": ".",
       "folder_exclude_patterns":
       [
-        "packages/*/build",
-        "node_modules"
+        "coverage",
+        "node_modules",
+        "packages/*/build"
       ],
     }
   ],
