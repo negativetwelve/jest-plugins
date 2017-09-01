@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "Adds plugins support to jest.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
