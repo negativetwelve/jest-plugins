@@ -13,7 +13,6 @@ describe('jest-plugins-rspec', () => {
 
   globals.forEach(globalFunction => {
     describe(globalFunction, () => {
-      set('globalFunction', () => globalFunction);
       it('should be defined as a global', () => {
         expect(global[globalFunction]).toBeDefined();
       });
