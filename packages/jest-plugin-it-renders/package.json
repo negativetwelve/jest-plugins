@@ -20,7 +20,7 @@
     "setup.js"
   ],
   "dependencies": {
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^16.0.0-beta.5"
   },
   "peerDependencies": {
     "jest": "*",
@@ -28,7 +28,7 @@
     "react": "*"
   },
   "devDependencies": {
-    "react": "^15.6.1"
+    "react": "^16.0.0-beta.5"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
