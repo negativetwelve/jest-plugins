@@ -20,19 +20,19 @@ The Jest Plugins repo is managed as a monorepo that is composed of many npm pack
 Plugin | Version | Description
 -------|---------|------------
 [`jest-plugins`](/packages/jest-plugins) | [![npm](https://img.shields.io/npm/v/jest-plugins.svg)][npm-plugins] | Adds the `plugins` feature to Jest.
+[`jest-plugins-recommended`](/packages/jest-plugins-recommended) | [![npm](https://img.shields.io/npm/v/jest-plugins-recommended.svg)][npm-recommended] | Recommended set of jest plugins.
 
 [npm-plugins]: https://www.npmjs.com/package/jest-plugins
+[npm-recommended]: https://www.npmjs.com/package/jest-plugins-recommended
 
 ### Plugin Sets
 
 Plugin | Version | Description
 -------|---------|------------
 [`jest-plugins-react`](/packages/jest-plugins-react) | [![npm](https://img.shields.io/npm/v/jest-plugins-react.svg)][npm-react] | Jest plugins for testing React components.
-[`jest-plugins-recommended`](/packages/jest-plugins-recommended) | [![npm](https://img.shields.io/npm/v/jest-plugins-recommended.svg)][npm-recommended] | Recommended set of jest plugins.
 [`jest-plugins-rspec`](/packages/jest-plugins-rspec) | [![npm](https://img.shields.io/npm/v/jest-plugins-rspec.svg)][npm-rspec] | Jest plugins for RSpec syntax.
 
 [npm-react]: https://www.npmjs.com/package/jest-plugins-react
-[npm-recommended]: https://www.npmjs.com/package/jest-plugins-recommended
 [npm-rspec]: https://www.npmjs.com/package/jest-plugins-rspec
 
 ### Plugins
