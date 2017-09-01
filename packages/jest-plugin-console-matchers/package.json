@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-console-matchers",
-  "version": "1.8.0",
+  "version": "1.8.3",
   "description": "Adds jest matchers for watching console methods.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -23,8 +23,8 @@
     "jest-plugins": "*"
   },
   "devDependencies": {
-    "jest-plugin-action": "^1.8.0",
-    "jest-plugin-context": "^1.8.0"
+    "jest-plugin-action": "^1.8.3",
+    "jest-plugin-context": "^1.8.3"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",

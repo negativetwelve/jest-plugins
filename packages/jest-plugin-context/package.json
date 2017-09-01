@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-context",
-  "version": "1.8.0",
+  "version": "1.8.3",
   "description": "Adds context as an alternative to describe to jest.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
