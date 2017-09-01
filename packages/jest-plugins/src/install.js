@@ -11,7 +11,7 @@ module.exports = (plugins) => {
       throw new Error(
         `Unable to find jest plugin: '${plugin}'. Check that your ` +
         `dependencies are installed correctly and that '${plugin}' is a ` +
-        `valid jest plugin.`
+        `valid jest plugin. Full error below:\n\n${error.message}`
       );
     }
   });
