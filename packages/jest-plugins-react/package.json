@@ -1,0 +1,30 @@
+{
+  "name": "jest-plugins-react",
+  "version": "0.0.0",
+  "description": "Jest plugins for testing React components.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugins-react",
+  "keywords": [
+    "component",
+    "jest",
+    "jest-plugins",
+    "plugins",
+    "react",
+    "react-native",
+    "render",
+    "test"
+  ],
+  "files": [
+    "setup.js"
+  ],
+  "dependencies": {
+    "jest-plugin-it-renders": "^1.7.2",
+    "jest-plugins": "^1.7.1"
+  },
+  "peerDependencies": {
+    "jest": "*",
+    "react": "*"
+  }
+}

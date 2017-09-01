@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest-plugins-react itRenders renders snapshot 1`] = `<div />`;
+
+exports[`jest-plugins-react itRenders renders snapshot 2`] = `<div />`;
