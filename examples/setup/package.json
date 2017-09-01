@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-example-setup",
-  "version": "1.8.0",
+  "version": "1.8.2",
   "private": true,
   "devDependencies": {
     "jest": "^20.0.4",
@@ -10,7 +10,7 @@
     "jest-plugin-its": "^1.8.0",
     "jest-plugin-set": "^1.8.0",
     "jest-plugin-unhandled-promise": "^1.8.0",
-    "jest-plugins": "^1.8.0"
+    "jest-plugins": "^1.8.2"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/jest-plugins.js",

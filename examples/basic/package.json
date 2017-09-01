@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-example-basic",
-  "version": "1.8.0",
+  "version": "1.8.2",
   "private": true,
   "devDependencies": {
     "jest": "^20.0.4",
@@ -8,7 +8,7 @@
     "jest-plugin-context": "^1.8.0",
     "jest-plugin-its": "^1.8.0",
     "jest-plugin-set": "^1.8.0",
-    "jest-plugins": "^1.8.0"
+    "jest-plugins": "^1.8.2"
   },
   "jest": {
     "setupFiles": [

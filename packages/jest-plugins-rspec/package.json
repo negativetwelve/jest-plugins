@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-rspec",
-  "version": "1.8.0",
+  "version": "1.8.2",
   "description": "Jest plugins to emulate RSpec syntax and structure.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -25,7 +25,7 @@
     "jest-plugin-context": "^1.8.0",
     "jest-plugin-its": "^1.8.0",
     "jest-plugin-set": "^1.8.0",
-    "jest-plugins": "^1.8.0"
+    "jest-plugins": "^1.8.2"
   },
   "peerDependencies": {
     "jest": "*"
