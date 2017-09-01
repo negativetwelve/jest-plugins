@@ -14,6 +14,8 @@ Install `jest-plugin-it-renders` using `yarn`:
 yarn add --dev jest-plugin-it-renders
 ```
 
+*NOTE:* If you're using a version of React before 16.0.0-alpha (basically anything in the ^15.0.0 range), you'll have to use `jest-plugin-it-renders` version `1.8.0`.
+
 ## Motivation
 
 For almost any React component, you want to test the following rules:
