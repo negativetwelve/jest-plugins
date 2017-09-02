@@ -9,6 +9,8 @@
   "keywords": [
     "dx",
     "jest",
+    "jest-plugin",
+    "plugin",
     "promise",
     "test"
   ],

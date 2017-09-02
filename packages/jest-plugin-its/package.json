@@ -9,6 +9,8 @@
   "keywords": [
     "its",
     "jest",
+    "jest-plugin",
+    "plugin",
     "subject",
     "test"
   ],

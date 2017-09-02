@@ -10,7 +10,9 @@
     "filesystem",
     "fs",
     "jest",
+    "jest-plugin",
     "mock",
+    "plugin",
     "test"
   ],
   "main": "build/fs",

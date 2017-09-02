@@ -9,6 +9,8 @@
   "keywords": [
     "context",
     "jest",
+    "jest-plugin",
+    "plugin",
     "test"
   ],
   "main": "build/context",

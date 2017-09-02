@@ -11,6 +11,8 @@
     "date",
     "datetime",
     "jest",
+    "jest-plugin",
+    "plugin",
     "time",
     "test"
   ],

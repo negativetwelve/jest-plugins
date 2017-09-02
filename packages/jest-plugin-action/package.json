@@ -10,6 +10,8 @@
     "action",
     "declarative",
     "jest",
+    "jest-plugin",
+    "plugin",
     "tdd",
     "test"
   ],

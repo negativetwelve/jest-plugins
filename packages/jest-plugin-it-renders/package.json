@@ -9,6 +9,8 @@
   "keywords": [
     "component",
     "jest",
+    "jest-plugin",
+    "plugin",
     "react",
     "render",
     "snapshot",
