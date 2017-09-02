@@ -6,4 +6,5 @@ require('jest-plugins')([
   'jest-plugin-clock',
   'jest-plugin-console-matchers',
   'jest-plugin-for-each',
+  'jest-plugin-fs',
 ]);

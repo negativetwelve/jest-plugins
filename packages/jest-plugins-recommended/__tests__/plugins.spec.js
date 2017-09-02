@@ -9,6 +9,7 @@ describe('jest-plugins-recommended', () => {
     'clock',
     'context',
     'forEach',
+    'fs',
     'its',
     'set',
     'subject',

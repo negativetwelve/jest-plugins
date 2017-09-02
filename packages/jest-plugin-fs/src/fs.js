@@ -3,7 +3,7 @@ import mockFs from 'mock-fs';
 
 
 const fs = {
-  create: (filesystem) => mockFs(filesystem),
+  mock: (filesystem = {}) => mockFs(filesystem),
   restore: () => mockFs.restore(),
 };
 
