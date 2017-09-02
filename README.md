@@ -43,6 +43,7 @@ Plugin | Version | Description
 [`jest-plugin-console-matchers`](/packages/jest-plugin-console-matchers) | [![npm](https://img.shields.io/npm/v/jest-plugin-console-matchers.svg)][npm-console-matchers] | Adds `console` matchers to expect `error`, `info`, `log`, or `warn`.
 [`jest-plugin-context`](/packages/jest-plugin-context) | [![npm](https://img.shields.io/npm/v/jest-plugin-context.svg)][npm-context] | Adds `context` as an alternative to `describe` for jest.
 [`jest-plugin-for-each`](/packages/jest-plugin-for-each) | [![npm](https://img.shields.io/npm/v/jest-plugin-for-each.svg)][npm-for-each] | Test multiple values for a single outcome.
+[`jest-plugin-fs`](/packages/jest-plugin-fs) | [![npm](https://img.shields.io/npm/v/jest-plugin-fs.svg)][npm-fs] | Mock out the filesystem in your tests.
 [`jest-plugin-it-renders`](/packages/jest-plugin-it-renders) | [![npm](https://img.shields.io/npm/v/jest-plugin-it-renders.svg)][npm-it-renders] | Easily test that your React components render.
 [`jest-plugin-its`](/packages/jest-plugin-its) | [![npm](https://img.shields.io/npm/v/jest-plugin-its.svg)][npm-its] | Adds `its` helper to quickly check `subject` properties.
 [`jest-plugin-set`](/packages/jest-plugin-set) | [![npm](https://img.shields.io/npm/v/jest-plugin-set.svg)][npm-set] | Declaratively `set` your variables lazily. Implements `let` from RSpec.
@@ -52,6 +53,7 @@ Plugin | Version | Description
 [npm-console-matchers]: https://www.npmjs.com/package/jest-plugin-console-matchers
 [npm-context]: https://www.npmjs.com/package/jest-plugin-context
 [npm-for-each]: https://www.npmjs.com/package/jest-plugin-for-each
+[npm-fs]: https://www.npmjs.com/package/jest-plugin-fs
 [npm-it-renders]: https://www.npmjs.com/package/jest-plugin-it-renders
 [npm-its]: https://www.npmjs.com/package/jest-plugin-its
 [npm-set]: https://www.npmjs.com/package/jest-plugin-set
