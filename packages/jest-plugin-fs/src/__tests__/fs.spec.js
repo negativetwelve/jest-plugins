@@ -6,7 +6,7 @@ import fs from '../fs';
 
 /* eslint-disable no-undef */
 describe('fs', () => {
-  beforeEach(() => fs.create({}));
+  beforeEach(() => fs.mock());
   afterEach(() => fs.restore());
 
   describe('new file', () => {
