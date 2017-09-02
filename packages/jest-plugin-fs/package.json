@@ -25,6 +25,10 @@
     "jest": "*",
     "jest-plugins": "*"
   },
+  "devDependencies": {
+    "fs-extra": "^4.0.1",
+    "jest-plugin-set": "*"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",
