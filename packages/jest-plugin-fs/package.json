@@ -1,0 +1,32 @@
+{
+  "name": "jest-plugin-fs",
+  "version": "0.0.0",
+  "description": "Jest plugin for mocking out the filesystem.",
+  "license": "MIT",
+  "author": "Mark Miyashita <negativetwelve@gmail.com>",
+  "homepage": "https://github.com/negativetwelve/jest-plugins",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-fs",
+  "keywords": [
+    "filesystem",
+    "fs",
+    "jest",
+    "mock",
+    "test"
+  ],
+  "main": "build/fs",
+  "files": [
+    "build",
+    "setup.js"
+  ],
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "jest": "*",
+    "jest-plugins": "*"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
