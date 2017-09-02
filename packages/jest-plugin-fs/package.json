@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-fs",
-  "version": "0.0.0",
+  "version": "1.8.5",
   "description": "Jest plugin for mocking out the filesystem.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
