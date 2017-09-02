@@ -19,6 +19,7 @@
     "setup.js"
   ],
   "dependencies": {
+    "mock-fs": "^4.4.1"
   },
   "peerDependencies": {
     "jest": "*",
