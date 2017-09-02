@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-it-renders",
-  "version": "1.8.4",
+  "version": "2.0.0",
   "description": "Jest plugin to quickly test if a React component renders.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
