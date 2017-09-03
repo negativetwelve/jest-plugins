@@ -1,11 +1,11 @@
 {
-  "name": "jest-plugin-it-renders",
+  "name": "jest-plugin-it-shallow-renders",
   "version": "2.0.1",
-  "description": "Jest plugin to quickly test if a React component renders properly.",
+  "description": "Jest plugin to quickly test if a React component shallow renders properly.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-it-renders",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-it-shallow-renders",
   "keywords": [
     "component",
     "jest",
@@ -13,10 +13,11 @@
     "plugin",
     "react",
     "render",
+    "shallow",
     "snapshot",
     "test"
   ],
-  "main": "build/itRenders",
+  "main": "build/itShallowRenders",
   "files": [
     "build",
     "setup.js"

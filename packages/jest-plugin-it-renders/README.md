@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/jest-plugin-it-renders.svg)](https://www.npmjs.com/package/jest-plugin-it-renders)
 [![npm](https://img.shields.io/npm/l/jest-plugin-it-renders.svg)](https://github.com/negativetwelve/jest-plugins/blob/master/LICENSE)
 
-Jest plugin to quickly test if a React component renders.
+Jest plugin to quickly test if a React component renders properly.
 
 ## Getting Started
 
