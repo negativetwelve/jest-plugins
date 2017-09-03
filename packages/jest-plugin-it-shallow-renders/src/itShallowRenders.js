@@ -1,5 +1,6 @@
 // Libraries
-import Renderer from 'react-test-renderer';
+import {shallow} from 'enzyme';
+import toJSON from 'enzyme-to-json';
 
 
 const itShallowRenders = (render) => {
@@ -9,7 +10,7 @@ const itShallowRenders = (render) => {
 
   it('shallow renders snapshot', () => {
     const rendered = render();
-    const element = Renderer.create(rendered).toJSON();
+    const element = toJSON(shallow(rendered));
 
     expect(element).toMatchSnapshot();
   });
