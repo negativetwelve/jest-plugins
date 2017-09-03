@@ -1,11 +1,11 @@
 {
-  "name": "jest-plugin-it-renders",
+  "name": "jest-plugin-it-shallow-renders",
   "version": "2.0.1",
-  "description": "Jest plugin to quickly test if a React component renders properly.",
+  "description": "Jest plugin to quickly test if a React component shallow renders properly.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-it-renders",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-it-shallow-renders",
   "keywords": [
     "component",
     "jest",
@@ -13,16 +13,18 @@
     "plugin",
     "react",
     "render",
+    "shallow",
     "snapshot",
     "test"
   ],
-  "main": "build/itRenders",
+  "main": "build/itShallowRenders",
   "files": [
     "build",
     "setup.js"
   ],
   "dependencies": {
-    "react-test-renderer": "^16.0.0-alpha"
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1"
   },
   "peerDependencies": {
     "jest": "*",
@@ -30,7 +32,8 @@
     "react": "*"
   },
   "devDependencies": {
-    "react": "^16.0.0-alpha"
+    "react": "^16.0.0-alpha",
+    "react-dom": "^16.0.0-alpha"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",

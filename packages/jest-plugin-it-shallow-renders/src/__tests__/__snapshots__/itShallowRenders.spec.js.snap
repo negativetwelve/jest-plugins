@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`itShallowRenders Text shallow renders snapshot 1`] = `
+<View>
+  <div />
+</View>
+`;
+
+exports[`itShallowRenders View shallow renders snapshot 1`] = `
+<div>
+  <div />
+</div>
+`;
