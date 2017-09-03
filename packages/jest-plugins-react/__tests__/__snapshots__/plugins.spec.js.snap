@@ -3,3 +3,11 @@
 exports[`jest-plugins-react itRenders renders snapshot 1`] = `<div />`;
 
 exports[`jest-plugins-react itRenders renders snapshot 2`] = `<div />`;
+
+exports[`jest-plugins-react itShallowRenders shallow renders snapshot 1`] = `<div />`;
+
+exports[`jest-plugins-react itShallowRenders shallow renders snapshot 2`] = `
+<View>
+  <div />
+</View>
+`;

@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "jest-plugin-it-renders": "^2.0.3",
+    "jest-plugin-it-shallow-renders": "^2.0.3",
     "jest-plugins": "^2.0.1"
   },
   "peerDependencies": {

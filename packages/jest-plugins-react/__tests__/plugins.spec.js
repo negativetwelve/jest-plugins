@@ -1,11 +1,12 @@
 // Modules
+import 'raf/polyfill';
 import '../setup';
 import React from 'react';
 
 
 // Test Components
 const View = () => <div />;
-const Text = () => <div />;
+const Text = () => <View><div /></View>;
 const Undefined = () => undefined;
 
 
@@ -13,6 +14,7 @@ const Undefined = () => undefined;
 describe('jest-plugins-react', () => {
   const globals = [
     'itRenders',
+    'itShallowRenders',
   ];
 
   globals.forEach(globalFunction => {
@@ -26,5 +28,10 @@ describe('jest-plugins-react', () => {
   describe('itRenders', () => {
     itRenders(() => <View />);
     itRenders(() => <Text />);
+  });
+
+  describe('itShallowRenders', () => {
+    itShallowRenders(() => <View />);
+    itShallowRenders(() => <Text />);
   });
 });
