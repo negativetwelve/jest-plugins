@@ -32,7 +32,8 @@
     "react": "*"
   },
   "devDependencies": {
-    "react": "^16.0.0-alpha"
+    "react": "^16.0.0-alpha",
+    "react-dom": "^16.0.0-alpha"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
