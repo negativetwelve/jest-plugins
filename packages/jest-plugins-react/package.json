@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-react",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Jest plugins for testing React components.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
