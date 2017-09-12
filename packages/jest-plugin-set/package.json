@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-set",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Declarative JS tests with lazy evaluation using jest.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
