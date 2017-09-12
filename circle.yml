@@ -8,9 +8,10 @@ dependencies:
   cache_directories:
     - ~/.cache/yarn
   override:
-    - yarn
-    - yarn run clean
-    - yarn run build
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    - yarn install --force
+    - yarn clean
+    - yarn build
 
 test:
   pre:

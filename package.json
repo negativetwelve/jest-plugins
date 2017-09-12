@@ -3,7 +3,7 @@
   "license": "MIT",
   "engines": {
     "node": ">=4",
-    "yarn": ">=0.27.5"
+    "yarn": ">=1.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -58,10 +58,10 @@
     "clean": "lerna clean --yes && lerna run clean",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint .",
-    "lint:cached": "yarn lint -- --cache",
+    "lint:cached": "yarn lint --cache",
     "precommit": "lint-staged",
     "test": "jest",
     "test:build": "yarn run build && yarn run test",
-    "test:coverage": "yarn test -- --coverage"
+    "test:coverage": "yarn test --coverage"
   }
 }
