@@ -1,1 +1,1 @@
-module.exports = require('memfs').fs;
+module.exports = require('./').mock;

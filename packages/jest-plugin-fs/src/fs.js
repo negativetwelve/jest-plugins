@@ -24,4 +24,5 @@ const fs = {
 };
 
 
+export {fs as mock} from 'memfs';
 export default fs;
