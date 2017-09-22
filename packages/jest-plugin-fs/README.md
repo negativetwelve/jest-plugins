@@ -21,11 +21,10 @@ Jest currently does not have an easy way to mock out the filesystem. This plugin
 ```javascript
 import fs from 'jest-plugin-fs';
 
+// Mock out the filesystem.
+jest.mock('fs', () => require('jest-plugin-fs/mock'));
 
 describe('FileWriter', () => {
-  // Inject the 'fs' mock.
-  beforeEach(() => fs.inject());
-
   // Create an in-memory filesystem.
   beforeEach(() => fs.mock());
   afterEach(() => fs.restore());
@@ -57,7 +56,7 @@ If you want, you can import `fs` from `jest-plugin-fs` at the top of every test:
 import fs from 'jest-plugin-fs';
 
 // This installs the mock for 'fs'.
-beforeEach(() => fs.inject());
+jest.mock('fs', () => require('jest-plugin-fs/mock'));
 ```
 
 If you want to install `fs` attached to the global `jest` object, you can modify the `jest` section of your `package.json` to include:
