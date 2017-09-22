@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-recommended",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Recommended set of jest plugins.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -17,12 +17,12 @@
     "setup.js"
   ],
   "dependencies": {
-    "jest-plugin-action": "^2.3.0",
-    "jest-plugin-clock": "^2.3.0",
-    "jest-plugin-console-matchers": "^2.3.0",
-    "jest-plugin-for-each": "^2.3.0",
-    "jest-plugins": "^2.3.0",
-    "jest-plugins-rspec": "^2.3.0"
+    "jest-plugin-action": "^2.3.1",
+    "jest-plugin-clock": "^2.3.1",
+    "jest-plugin-console-matchers": "^2.3.1",
+    "jest-plugin-for-each": "^2.3.1",
+    "jest-plugins": "^2.3.1",
+    "jest-plugins-rspec": "^2.3.1"
   },
   "peerDependencies": {
     "jest": "*"
