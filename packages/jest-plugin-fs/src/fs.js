@@ -1,10 +1,18 @@
 // Libraries
-import mockFs from 'mock-fs';
+import memfs from 'memfs';
 
 
 const fs = {
-  mock: (filesystem = {}) => mockFs(filesystem),
-  restore: () => mockFs.restore(),
+  // For jest, this will set up mocks so that `fs` and `fs-extra` will
+  // be overwritten.
+  inject: () => {
+    jest.mock('fs', () => require('memfs'));
+    jest.mock('fs-extra', () => require('memfs'));
+  },
+
+  mock: (filesystem = {}) => memfs.vol.fromJSON(filesystem, '/'),
+  read: () => memfs.vol.toJSON(),
+  restore: () => memfs.vol.reset(),
 };
 
 
