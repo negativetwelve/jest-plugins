@@ -20,4 +20,24 @@ describe('fs', () => {
       expect(fsExtra.readFileSync(filename, 'utf8')).toEqual('test-content');
     });
   });
+
+  context('with nested directories', () => {
+    set('filesystem', () => ({
+      test: {
+        directory: {
+          nested: {
+            file: 'hello there',
+          },
+        },
+      },
+    }));
+
+    beforeEach(() => fs.mock(filesystem));
+
+    it('should create nested directories', () => {
+      expect(
+        fsExtra.readFileSync('/test/directory/nested/file', 'utf8'),
+      ).toEqual('hello there');
+    });
+  });
 });
