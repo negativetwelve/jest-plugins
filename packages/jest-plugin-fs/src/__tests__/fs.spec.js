@@ -1,10 +1,11 @@
 // Modules
-import '../../setup';
-import fsExtra from 'fs-extra';
 import set from 'jest-plugin-set';
 import context from 'jest-plugin-context';
+import fsExtra from 'fs-extra';
 import fs from '../fs';
 
+// Install the mock for the filesystem.
+jest.mock('fs', () => require('jest-plugin-fs/mock'));
 
 /* eslint-disable no-undef */
 describe('fs', () => {

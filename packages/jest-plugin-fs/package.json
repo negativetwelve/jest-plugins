@@ -18,6 +18,7 @@
   "main": "build/fs",
   "files": [
     "build",
+    "mock.js",
     "setup.js"
   ],
   "dependencies": {
