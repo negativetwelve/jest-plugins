@@ -1,16 +1,16 @@
 {
   "name": "jest-plugins-example-setup",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "private": true,
   "devDependencies": {
     "jest": "^20.0.4",
-    "jest-plugin-action": "^2.3.3",
-    "jest-plugin-console-matchers": "^2.3.3",
-    "jest-plugin-context": "^2.3.3",
-    "jest-plugin-its": "^2.3.3",
-    "jest-plugin-set": "^2.3.3",
-    "jest-plugin-unhandled-promise": "^2.3.3",
-    "jest-plugins": "^2.3.3"
+    "jest-plugin-action": "^2.3.4",
+    "jest-plugin-console-matchers": "^2.3.4",
+    "jest-plugin-context": "^2.3.4",
+    "jest-plugin-its": "^2.3.4",
+    "jest-plugin-set": "^2.3.4",
+    "jest-plugin-unhandled-promise": "^2.3.4",
+    "jest-plugins": "^2.3.4"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/jest-plugins.js",
