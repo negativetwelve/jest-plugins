@@ -1,14 +1,14 @@
 {
   "name": "jest-plugins-example-basic",
-  "version": "2.3.4",
+  "version": "2.4.0",
   "private": true,
   "devDependencies": {
     "jest": "^20.0.4",
-    "jest-plugin-action": "^2.3.4",
-    "jest-plugin-context": "^2.3.4",
-    "jest-plugin-its": "^2.3.4",
-    "jest-plugin-set": "^2.3.4",
-    "jest-plugins": "^2.3.4"
+    "jest-plugin-action": "^2.4.0",
+    "jest-plugin-context": "^2.4.0",
+    "jest-plugin-its": "^2.4.0",
+    "jest-plugin-set": "^2.4.0",
+    "jest-plugins": "^2.4.0"
   },
   "jest": {
     "setupFiles": [
