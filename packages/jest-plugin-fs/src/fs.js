@@ -1,11 +1,11 @@
 // Libraries
-import memfs from 'memfs';
+import {vol} from 'memfs';
 
 
 const fs = {
-  mock: (filesystem = {}) => memfs.vol.fromJSON(filesystem, '/'),
-  read: () => memfs.vol.toJSON(),
-  restore: () => memfs.vol.reset(),
+  mock: (filesystem = {}) => vol.fromJSON(filesystem, '/'),
+  read: () => vol.toJSON(),
+  restore: () => vol.reset(),
 };
 
 
