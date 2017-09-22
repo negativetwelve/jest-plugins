@@ -1,6 +1,8 @@
 // Modules
+import '../../setup';
 import fsExtra from 'fs-extra';
 import set from 'jest-plugin-set';
+import context from 'jest-plugin-context';
 import fs from '../fs';
 
 
@@ -9,7 +11,7 @@ describe('fs', () => {
   beforeEach(() => fs.mock());
   afterEach(() => fs.restore());
 
-  describe('new file', () => {
+  context('with new file', () => {
     set('filename', () => 'some/path/to/file.txt');
     beforeEach(() => fsExtra.outputFileSync(filename, 'test-content'));
 

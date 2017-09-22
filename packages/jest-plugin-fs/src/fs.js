@@ -1,10 +1,12 @@
 // Libraries
-import mockFs from 'mock-fs';
+import memfs from 'memfs';
 
 
 const fs = {
-  mock: (filesystem = {}) => mockFs(filesystem),
-  restore: () => mockFs.restore(),
+  inject: () => jest.mock('fs', () => require('memfs').fs),
+  mock: (filesystem = {}) => memfs.vol.fromJSON(filesystem, '/'),
+  read: () => memfs.vol.toJSON(),
+  restore: () => memfs.vol.reset(),
 };
 
 
