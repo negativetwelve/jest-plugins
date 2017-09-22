@@ -3,4 +3,3 @@
  * test files.
  */
 global.fs = require('./').default;
-global.fs.inject();
