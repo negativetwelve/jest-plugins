@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-it-shallow-renders",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Jest plugin to quickly test if a React component shallow renders properly.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
