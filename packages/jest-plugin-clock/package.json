@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-clock",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Jest plugin to mock dates, times, and datetimes.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -29,7 +29,7 @@
     "jest-plugins": "*"
   },
   "devDependencies": {
-    "jest-plugin-context": "^2.4.1"
+    "jest-plugin-context": "^2.4.2"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
