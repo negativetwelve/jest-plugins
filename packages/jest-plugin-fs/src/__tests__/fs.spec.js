@@ -4,6 +4,8 @@ import set from 'jest-plugin-set';
 import fsExtra from 'fs-extra';
 import fs from '../fs';
 
+// Require the mock for the `fs` module.
+jest.mock('fs', () => require('jest-plugin-fs/mock'));
 
 /* eslint-disable no-undef */
 describe('fs', () => {
@@ -55,11 +57,11 @@ describe('fs', () => {
       }));
 
       it('should return the files', () => {
-        expect(fs.read()).toEqual({test: 'content', hello: 'goodbye'});
+        expect(fs.read()).toEqual({'/test': 'content', '/hello': 'goodbye'});
       });
     });
 
-    content('with nested files', () => {
+    context('with nested files', () => {
       beforeEach(() => fs.mock({
         test: {
           nested: {
