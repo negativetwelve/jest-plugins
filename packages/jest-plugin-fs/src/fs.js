@@ -1,10 +1,6 @@
 // Libraries
-import fs from 'fs';
-import {fs as mock, vol} from 'memfs';
+import {fs as mockFs, vol} from 'memfs';
 
-
-// Store a reference to the unmocked fs module.
-const unmockedFs = Object.assign({}, fs);
 
 /**
  * We allow passing in a nested object of paths. This function combines the
@@ -56,10 +52,8 @@ const jestFs = {
    */
   restore: () => {
     vol.reset();
-    Object.assign(fs, unmockedFs);
   },
 };
 
 
-export {mock};
 export default jestFs;
