@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-for-each",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Jest plugin to test multiple values for a single outcome.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "invariant": "^2.2.2",
-    "jest-plugin-set": "^2.4.0"
+    "jest-plugin-set": "^2.4.1"
   },
   "peerDependencies": {
     "jest": "*",
