@@ -2179,6 +2179,10 @@ fs-monkey@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.2.1.tgz#aa1b88209edd1e0b08c83d638a4f5c67ed518550"
 
+fs-monkey@negativetwelve/fs-monkey:
+  version "0.2.1"
+  resolved "https://codeload.github.com/negativetwelve/fs-monkey/tar.gz/237955f389c03793eef28b21fe2b664ce6ae2437"
+
 fs-readdir-recursive@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs-readdir-recursive/-/fs-readdir-recursive-1.0.0.tgz#8cd1745c8b4f8a29c8caec392476921ba195f560"
@@ -5109,6 +5113,12 @@ uglify-to-browserify@~1.0.0:
 uid-number@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
+
+unionfs@negativetwelve/unionfs:
+  version "2.0.3"
+  resolved "https://codeload.github.com/negativetwelve/unionfs/tar.gz/209ebe65a7503c60a2cd481fe6e3b8b303f44cd6"
+  dependencies:
+    fs-monkey negativetwelve/fs-monkey
 
 universalify@^0.1.0:
   version "0.1.1"

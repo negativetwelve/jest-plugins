@@ -22,7 +22,8 @@
     "setup.js"
   ],
   "dependencies": {
-    "memfs": "^2.5.5"
+    "memfs": "^2.5.5",
+    "unionfs": "negativetwelve/unionfs"
   },
   "peerDependencies": {
     "jest": "*",

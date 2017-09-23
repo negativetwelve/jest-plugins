@@ -1,10 +1,10 @@
 // Modules
-import set from 'jest-plugin-set';
 import context from 'jest-plugin-context';
+import set from 'jest-plugin-set';
 import fsExtra from 'fs-extra';
 import fs from '../fs';
 
-// Install the mock for the filesystem.
+// Require the mock for the `fs` module.
 jest.mock('fs', () => require('jest-plugin-fs/mock'));
 
 /* eslint-disable no-undef */
@@ -38,6 +38,41 @@ describe('fs', () => {
       expect(
         fsExtra.readFileSync('/test/directory/nested/file', 'utf8'),
       ).toEqual('hello there');
+    });
+  });
+
+  describe('#read', () => {
+    context('with empty filesystem', () => {
+      beforeEach(() => fs.mock());
+
+      it('should return an empty object', () => {
+        expect(fs.read()).toEqual({});
+      });
+    });
+
+    context('with files', () => {
+      beforeEach(() => fs.mock({
+        test: 'content',
+        hello: 'goodbye',
+      }));
+
+      it('should return the files', () => {
+        expect(fs.read()).toEqual({'/test': 'content', '/hello': 'goodbye'});
+      });
+    });
+
+    context('with nested files', () => {
+      beforeEach(() => fs.mock({
+        test: {
+          nested: {
+            file: 'hi',
+          },
+        },
+      }));
+
+      it('should return the full path', () => {
+        expect(fs.read()).toEqual({'/test/nested/file': 'hi'});
+      });
     });
   });
 });

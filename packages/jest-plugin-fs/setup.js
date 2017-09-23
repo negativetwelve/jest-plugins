@@ -1,5 +1,4 @@
 /**
- * Installs fs and makes it available on the jest global object throughout all
- * test files.
+ * Installs fs and makes it available globally throughout all test files.
  */
 global.fs = require('./').default;
