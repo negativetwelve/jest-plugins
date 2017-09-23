@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "memfs": "^2.5.5",
-    "unionfs": "^2.0.3"
+    "unionfs": "negativetwelve/unionfs"
   },
   "peerDependencies": {
     "jest": "*",

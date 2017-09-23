@@ -1,4 +1,5 @@
 // Libraries
+import fs from 'fs';
 import {fs as mockFs, vol} from 'memfs';
 import {ufs} from 'unionfs';
 
@@ -56,7 +57,7 @@ const jestFs = {
   },
 };
 
-ufs.use(mockFs);
+ufs.use(mockFs).use(fs);
 
 
 export {ufs as mock};
