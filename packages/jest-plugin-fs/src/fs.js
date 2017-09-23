@@ -1,6 +1,10 @@
 // Libraries
+import fs from 'fs';
 import {fs as mock, vol} from 'memfs';
 
+
+// Store a reference to the unmocked fs module.
+const unmockedFs = Object.assign({}, fs);
 
 /**
  * We allow passing in a nested object of paths. This function combines the
@@ -30,7 +34,7 @@ const flatten = (root, object) => {
  * Mocked filesystem module that contains the helper functions to create and
  * reset filesystems.
  */
-const fs = {
+const jestFs = {
   root: '/',
 
   /**
@@ -39,7 +43,7 @@ const fs = {
    */
   mock: (filesystem = {}) => {
     vol.reset();
-    vol.fromJSON(flatten(fs.root, filesystem), fs.root);
+    vol.fromJSON(flatten(jestFs.root, filesystem), jestFs.root);
   },
 
   /**
@@ -48,11 +52,14 @@ const fs = {
   read: () => vol.toJSON(),
 
   /**
-   * Restores the filesystem and removes all existing files.
+   * Resets the mocked volume and restores the fs module.
    */
-  restore: () => vol.reset(),
+  restore: () => {
+    vol.reset();
+    Object.assign(fs, unmockedFs);
+  },
 };
 
 
 export {mock};
-export default fs;
+export default jestFs;
