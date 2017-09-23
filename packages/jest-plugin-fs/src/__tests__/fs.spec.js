@@ -41,12 +41,12 @@ describe('fs', () => {
     });
   });
 
-  describe('#read', () => {
+  describe('#files', () => {
     context('with empty filesystem', () => {
       beforeEach(() => fs.mock());
 
       it('should return an empty object', () => {
-        expect(fs.read()).toEqual({});
+        expect(fs.files()).toEqual({});
       });
     });
 
@@ -57,7 +57,7 @@ describe('fs', () => {
       }));
 
       it('should return the files', () => {
-        expect(fs.read()).toEqual({'/test': 'content', '/hello': 'goodbye'});
+        expect(fs.files()).toEqual({'/test': 'content', '/hello': 'goodbye'});
       });
     });
 
@@ -71,7 +71,7 @@ describe('fs', () => {
       }));
 
       it('should return the full path', () => {
-        expect(fs.read()).toEqual({'/test/nested/file': 'hi'});
+        expect(fs.files()).toEqual({'/test/nested/file': 'hi'});
       });
     });
   });

@@ -1,7 +1,5 @@
 // Libraries
-import fs from 'fs';
 import {fs as mockFs, vol} from 'memfs';
-import {ufs} from 'unionfs';
 
 
 /**
@@ -36,6 +34,13 @@ const jestFs = {
   root: '/',
 
   /**
+   * Returns a JS object with the mocked filesystem contents.
+   */
+  files: () => {
+    return vol.toJSON();
+  },
+
+  /**
    * When we mock the filesystem, we need to first reset, then create an
    * instance from JSON.
    */
@@ -45,9 +50,12 @@ const jestFs = {
   },
 
   /**
-   * Returns a JS object with the mocked filesystem contents.
+   * Escape hatch that uses real `fs` to read files from the filesystem.
+   * Use this to load fixture data from real files.
    */
-  read: () => vol.toJSON(),
+  read: (filename) => {
+    return require.requireActual('fs').readFileSync(filename, 'utf8');
+  },
 
   /**
    * Resets the mocked volume and restores the fs module.
@@ -57,8 +65,6 @@ const jestFs = {
   },
 };
 
-ufs.use(mockFs).use(fs);
 
-
-export {ufs as mock};
+export {mockFs as mock};
 export default jestFs;
