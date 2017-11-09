@@ -2,7 +2,11 @@
 import context from 'jest-plugin-context';
 import set from 'jest-plugin-set';
 import fsExtra from 'fs-extra';
+import path from 'path';
 import fs from '../fs';
+
+// Path to the fixtures directory.
+const FIXTURES = path.join(__dirname, '..', '__fixtures__');
 
 // Require the mock for the `fs` module.
 jest.mock('fs', () => require('jest-plugin-fs/mock'));
@@ -51,10 +55,7 @@ describe('fs', () => {
     });
 
     context('with files', () => {
-      beforeEach(() => fs.mock({
-        test: 'content',
-        hello: 'goodbye',
-      }));
+      beforeEach(() => fs.mock({test: 'content', hello: 'goodbye'}));
 
       it('should return the files', () => {
         expect(fs.files()).toEqual({'/test': 'content', '/hello': 'goodbye'});
@@ -72,6 +73,18 @@ describe('fs', () => {
 
       it('should return the full path', () => {
         expect(fs.files()).toEqual({'/test/nested/file': 'hi'});
+      });
+    });
+  });
+
+  describe('#unmock', () => {
+    context('with unmocked file', () => {
+      set('filename', () => path.join(FIXTURES, 'test.txt'));
+
+      beforeEach(() => fs.unmock([filename]));
+
+      it('should exist in the virtual filesystem', () => {
+        expect(fsExtra.readFileSync(filename, 'utf8')).toEqual('this is a test\n');
       });
     });
   });
