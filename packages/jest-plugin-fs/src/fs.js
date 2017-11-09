@@ -27,41 +27,60 @@ const flatten = (root, object) => {
 };
 
 /**
+ * Root of the filesystem.
+ */
+const root = '/';
+
+/**
+ * Escape hatch that uses real `fs` to read files from the filesystem.
+ * Use this to load fixture data from real files.
+ */
+const read = (filename) => {
+  return require.requireActual('fs').readFileSync(filename, 'utf8');
+};
+
+/**
+ * Returns a JS object with the mocked filesystem contents.
+ */
+const files = () => vol.toJSON();
+
+/**
+ * When we mock the filesystem, we traverse the object to get the
+ * full paths to the file.
+ */
+const mock = (filesystem = {}, fsRoot = root) => {
+  vol.fromJSON(flatten(fsRoot, filesystem), fsRoot);
+};
+
+/**
+ * Reads the passed in files from the filesystem and adds them to the
+ * virtual mocked filesystem
+ */
+const unmock = (files = []) => {
+  const readAll = (all, file) => ({...all, [file]: read(file)});
+  const filesystem = files.reduce(readAll, {});
+
+  mock(filesystem);
+};
+
+/**
+ * Resets the mocked volume and restores the fs module.
+ */
+const restore = () => vol.reset();
+
+/**
  * Mocked filesystem module that contains the helper functions to create and
  * reset filesystems.
  */
 const jestFs = {
-  root: '/',
+  root,
+  files,
 
-  /**
-   * Returns a JS object with the mocked filesystem contents.
-   */
-  files: () => {
-    return vol.toJSON();
-  },
-
-  /**
-   * When we mock the filesystem, we traverse the object to get the
-   * full paths to the file.
-   */
-  mock: (filesystem = {}) => {
-    vol.fromJSON(flatten(jestFs.root, filesystem), jestFs.root);
-  },
-
-  /**
-   * Escape hatch that uses real `fs` to read files from the filesystem.
-   * Use this to load fixture data from real files.
-   */
-  read: (filename) => {
-    return require.requireActual('fs').readFileSync(filename, 'utf8');
-  },
-
-  /**
-   * Resets the mocked volume and restores the fs module.
-   */
-  restore: () => {
-    vol.reset();
-  },
+  // NOTE(mark): This allows the root to be configurable by the fs object.
+  mock: (filesystem) => mock(filesystem, jestFs.root),
+  read,
+  restore,
+  unmock,
 };
 
 
