@@ -1,4 +1,5 @@
 // Libraries
+import path from 'path';
 import {fs as mockFs, vol} from 'memfs';
 
 
@@ -29,7 +30,7 @@ const flatten = (root, object) => {
 /**
  * Root of the filesystem.
  */
-const root = '/';
+const root = path.normalize('/');
 
 /**
  * Escape hatch that uses real `fs` to read files from the filesystem.
