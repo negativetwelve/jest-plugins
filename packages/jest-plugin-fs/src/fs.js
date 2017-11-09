@@ -56,11 +56,11 @@ const mock = (filesystem = {}, fsRoot = root) => {
  * Reads the passed in files from the filesystem and adds them to the
  * virtual mocked filesystem
  */
-const unmock = (files = []) => {
+const unmock = (files = [], fsRoot = root) => {
   const readAll = (all, file) => ({...all, [file]: read(file)});
   const filesystem = files.reduce(readAll, {});
 
-  mock(filesystem, '');
+  mock(filesystem, fsRoot);
 };
 
 /**
@@ -75,12 +75,12 @@ const restore = () => vol.reset();
 const jestFs = {
   root,
   files,
+  read,
+  restore,
 
   // NOTE(mark): This allows the root to be configurable by the fs object.
   mock: (filesystem) => mock(filesystem, jestFs.root),
-  read,
-  restore,
-  unmock,
+  unmock: (files) => unmock(files, jestFs.root),
 };
 
 
