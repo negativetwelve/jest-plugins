@@ -82,7 +82,7 @@ describe('fs', () => {
 
   describe('#unmock', () => {
     context('with unmocked file', () => {
-      set('file', () => path.join(FIXTURES, 'test.txt'));
+      set('file', () => path.normalize(path.join(FIXTURES, 'test.txt')));
 
       beforeEach(() => fs.unmock([file]));
 
