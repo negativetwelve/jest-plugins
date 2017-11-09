@@ -1,4 +1,5 @@
 // Libraries
+import os from 'os';
 import path from 'path';
 import {fs as mockFs, vol} from 'memfs';
 
@@ -30,7 +31,8 @@ const flatten = (absolutePath, object) => {
 /**
  * Root of the filesystem.
  */
-const root = path.normalize('/');
+const isWindows = os.platform() === 'win32';
+const root = isWindows ? process.cwd().split(path.sep)[0] : '/';
 
 /**
  * Escape hatch that uses real `fs` to read files from the filesystem.
