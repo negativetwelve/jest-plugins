@@ -87,7 +87,9 @@ describe('fs', () => {
       beforeEach(() => fs.unmock([file]));
 
       it('should exist in the virtual filesystem', () => {
-        expect(fsExtra.readFileSync(file, 'utf8')).toEqual('this is a test\n');
+        expect(fs.files()).toEqual({
+          [file]: 'this is a test\n',
+        });
       });
     });
   });
