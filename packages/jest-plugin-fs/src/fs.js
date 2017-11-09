@@ -41,11 +41,10 @@ const jestFs = {
   },
 
   /**
-   * When we mock the filesystem, we need to first reset, then create an
-   * instance from JSON.
+   * When we mock the filesystem, we traverse the object to get the
+   * full paths to the file.
    */
   mock: (filesystem = {}) => {
-    vol.reset();
     vol.fromJSON(flatten(jestFs.root, filesystem), jestFs.root);
   },
 
