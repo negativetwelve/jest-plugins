@@ -1,5 +1,4 @@
 // Libraries
-import path from 'path';
 import {fs as mockFs, vol} from 'memfs';
 
 
@@ -9,7 +8,7 @@ import {fs as mockFs, vol} from 'memfs';
  */
 const flatten = (absolutePath, object) => {
   const accumulate = (all, [currentPath, value]) => {
-    const fullPath = path.join(absolutePath, currentPath);
+    const fullPath = `${absolutePath}/${currentPath}`;
 
     if (typeof value === 'string') {
       return {
@@ -30,7 +29,7 @@ const flatten = (absolutePath, object) => {
 /**
  * Root of the filesystem.
  */
-const root = path.normalize('/');
+const root = '/';
 
 /**
  * Escape hatch that uses real `fs` to read files from the filesystem.
