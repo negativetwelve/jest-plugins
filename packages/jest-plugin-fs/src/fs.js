@@ -28,18 +28,6 @@ const flatten = (absolutePath, object) => {
 };
 
 /**
- * Normalize all paths with the platform separator.
- */
-const normalizePaths = (paths) => {
-  const normalize = (all, [currentPath, content]) => ({
-    ...all,
-    [path.normalize(currentPath)]: content,
-  });
-
-  return Object.entries(paths).reduce(normalize, {});
-};
-
-/**
  * Root of the filesystem.
  */
 const root = path.normalize('/');
@@ -55,7 +43,7 @@ const read = (filename) => {
 /**
  * Returns a JS object with the mocked filesystem contents.
  */
-const files = () => normalizePaths(vol.toJSON());
+const files = () => vol.toJSON();
 
 /**
  * When we mock the filesystem, we traverse the object to get the
