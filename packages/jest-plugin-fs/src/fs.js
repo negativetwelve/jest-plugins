@@ -5,12 +5,19 @@ import {fs as mockFs, vol} from 'memfs';
 
 
 /**
+ * Root of the filesystem.
+ */
+const isWindows = os.platform() === 'win32';
+const root = isWindows ? process.cwd().split(path.sep)[0] : '/';
+
+/**
  * We allow passing in a nested object of paths. This function combines the
  * paths into a single flattened object of absolute path -> content.
  */
 const flatten = (absolutePath, object) => {
   const accumulate = (all, [currentPath, value]) => {
-    const fullPath = path.join(absolutePath, currentPath);
+    const joinedPath = path.join(absolutePath, currentPath);
+    const fullPath = path.isAbsolute(currentPath) ? currentPath : joinedPath;
 
     if (typeof value === 'string') {
       return {
@@ -27,12 +34,6 @@ const flatten = (absolutePath, object) => {
 
   return Object.entries(object).reduce(accumulate, {});
 };
-
-/**
- * Root of the filesystem.
- */
-const isWindows = os.platform() === 'win32';
-const root = isWindows ? process.cwd().split(path.sep)[0] : '/';
 
 /**
  * Escape hatch that uses real `fs` to read files from the filesystem.
