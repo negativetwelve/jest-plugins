@@ -20,15 +20,9 @@ const flatten = (absolutePath, object) => {
     const fullPath = path.isAbsolute(currentPath) ? currentPath : joinedPath;
 
     if (typeof value === 'string') {
-      return {
-        ...all,
-        [fullPath]: value,
-      };
+      return {...all, [fullPath]: value};
     } else {
-      return {
-        ...all,
-        ...flatten(fullPath, value),
-      };
+      return {...all, ...flatten(fullPath, value)};
     }
   };
 
