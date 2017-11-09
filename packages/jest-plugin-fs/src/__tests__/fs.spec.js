@@ -6,7 +6,7 @@ import path from 'path';
 import fs from '../fs';
 
 // Path to the fixtures directory.
-const FIXTURES = `${__dirname}/../__fixtures__`;
+const FIXTURES = path.join(__dirname, '..', '__fixtures__');
 
 // Require the mock for the `fs` module.
 jest.mock('fs', () => require('jest-plugin-fs/mock'));
@@ -79,7 +79,7 @@ describe('fs', () => {
 
   describe('#unmock', () => {
     context('with unmocked file', () => {
-      set('filename', () => `${FIXTURES}/test.txt`);
+      set('filename', () => path.join(FIXTURES, 'test.txt'));
 
       beforeEach(() => fs.unmock([filename]));
 
