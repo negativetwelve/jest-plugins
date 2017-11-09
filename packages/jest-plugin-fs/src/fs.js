@@ -7,9 +7,9 @@ import {fs as mockFs, vol} from 'memfs';
  * We allow passing in a nested object of paths. This function combines the
  * paths into a single flattened object of absolute path -> content.
  */
-const flatten = (fsRoot, object) => {
+const flatten = (absolutePath, object) => {
   const accumulate = (all, [currentPath, value]) => {
-    const fullPath = path.join(fsRoot, currentPath);
+    const fullPath = path.join(absolutePath, currentPath);
 
     if (typeof value === 'string') {
       return {

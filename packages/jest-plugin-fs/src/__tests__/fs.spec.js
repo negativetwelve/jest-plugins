@@ -82,14 +82,12 @@ describe('fs', () => {
 
   describe('#unmock', () => {
     context('with unmocked file', () => {
-      set('file', () => path.normalize(path.join(FIXTURES, 'test.txt')));
+      set('file', () => path.join(FIXTURES, 'test.txt'));
 
       beforeEach(() => fs.unmock([file]));
 
       it('should exist in the virtual filesystem', () => {
-        expect(fs.files()).toEqual({
-          [file]: 'this is a test\n',
-        });
+        expect(fsExtra.readFileSync(file, 'utf8')).toEqual('this is a test\n');
       });
     });
   });
