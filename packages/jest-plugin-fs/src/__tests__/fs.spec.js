@@ -4,6 +4,9 @@ import set from 'jest-plugin-set';
 import fsExtra from 'fs-extra';
 import fs from '../fs';
 
+// Path to the fixtures directory.
+const FIXTURES = `${__dirname}/../__fixtures__`;
+
 // Require the mock for the `fs` module.
 jest.mock('fs', () => require('jest-plugin-fs/mock'));
 
@@ -72,6 +75,20 @@ describe('fs', () => {
 
       it('should return the full path', () => {
         expect(fs.files()).toEqual({'/test/nested/file': 'hi'});
+      });
+    });
+  });
+
+  describe('#unmock', () => {
+    context('with unmocked file', () => {
+      beforeEach(() => fs.unmock([
+        `${FIXTURES}/test.txt`,
+      ]));
+
+      it('should exist in the virtual filesystem', () => {
+        expect(fs.files()).toEqual({
+          [`${FIXTURES}/test.txt`]: 'this is a test',
+        });
       });
     });
   });
