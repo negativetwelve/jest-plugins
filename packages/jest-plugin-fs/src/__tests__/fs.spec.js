@@ -2,6 +2,7 @@
 import context from 'jest-plugin-context';
 import set from 'jest-plugin-set';
 import fsExtra from 'fs-extra';
+import path from 'path';
 import fs from '../fs';
 
 // Path to the fixtures directory.
@@ -54,10 +55,7 @@ describe('fs', () => {
     });
 
     context('with files', () => {
-      beforeEach(() => fs.mock({
-        test: 'content',
-        hello: 'goodbye',
-      }));
+      beforeEach(() => fs.mock({test: 'content', hello: 'goodbye'}));
 
       it('should return the files', () => {
         expect(fs.files()).toEqual({'/test': 'content', '/hello': 'goodbye'});
@@ -81,12 +79,14 @@ describe('fs', () => {
 
   describe('#unmock', () => {
     context('with unmocked file', () => {
-      set('file', () => `${FIXTURES}/test.txt`);
+      set('filename', () => `${FIXTURES}/test.txt`);
 
-      beforeEach(() => fs.unmock([file]));
+      beforeEach(() => fs.unmock([filename]));
 
       it('should exist in the virtual filesystem', () => {
-        expect(fsExtra.readFileSync(file, 'utf8')).toEqual('this is a test\n');
+        expect(
+          fsExtra.readFileSync(path.resolve(filename), 'utf8'),
+        ).toEqual('this is a test\n');
       });
     });
   });
