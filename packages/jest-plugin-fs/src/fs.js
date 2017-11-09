@@ -60,7 +60,7 @@ const unmock = (files = []) => {
   const readAll = (all, file) => ({...all, [file]: read(file)});
   const filesystem = files.reduce(readAll, {});
 
-  mock(filesystem);
+  mock(filesystem, '');
 };
 
 /**
