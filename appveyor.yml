@@ -4,7 +4,6 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - choco install yarn --ignore-dependencies
   - yarn
   - yarn run clean
   - yarn run build
