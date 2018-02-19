@@ -21,8 +21,7 @@
     "setup.js"
   ],
   "peerDependencies": {
-    "jest": "*",
-    "jest-plugins": "*"
+    "jest": "*"
   },
   "devDependencies": {
     "jest-plugin-action": "^2.6.0",
