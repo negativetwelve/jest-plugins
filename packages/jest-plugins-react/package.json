@@ -25,7 +25,6 @@
     "jest-plugins": "^2.8.0"
   },
   "peerDependencies": {
-    "jest": "*",
-    "react": "*"
+    "jest": "*"
   }
 }
