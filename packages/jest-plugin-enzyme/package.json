@@ -24,6 +24,10 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3"
   },
+  "peerDependencies": {
+    "jest": "*",
+    "react": "*"
+  },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",
