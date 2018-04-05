@@ -1,6 +1,6 @@
 {
   "name": "jest-plugins-react",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "Jest plugins for testing React components.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -20,9 +20,9 @@
     "setup.js"
   ],
   "dependencies": {
-    "jest-plugin-it-renders": "^2.8.1",
-    "jest-plugin-it-shallow-renders": "^2.8.1",
-    "jest-plugins": "^2.8.1"
+    "jest-plugin-it-renders": "^2.8.2",
+    "jest-plugin-it-shallow-renders": "^2.8.2",
+    "jest-plugins": "^2.8.2"
   },
   "peerDependencies": {
     "jest": "*"

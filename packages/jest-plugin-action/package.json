@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-action",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "Declarative method for testing actions in jest.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
@@ -21,13 +21,13 @@
     "setup.js"
   ],
   "dependencies": {
-    "jest-plugin-set": "^2.8.1"
+    "jest-plugin-set": "^2.8.2"
   },
   "peerDependencies": {
     "jest": "*"
   },
   "devDependencies": {
-    "jest-plugin-context": "^2.8.1"
+    "jest-plugin-context": "^2.8.2"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore '**/*.spec.js'",
