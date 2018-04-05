@@ -22,7 +22,8 @@
     "setup.js"
   ],
   "dependencies": {
-    "react-test-renderer": "^16.2.0"
+    "react": ">=16.0.0",
+    "react-test-renderer": ">=16.0.0"
   },
   "peerDependencies": {
     "jest": "*"
