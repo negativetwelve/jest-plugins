@@ -1,28 +1,28 @@
 {
-  "name": "jest-plugin-it-renders",
+  "name": "jest-plugin-enzyme",
   "version": "2.7.0",
-  "description": "Jest plugin to quickly test if a React component renders properly.",
+  "description": "Jest plugin to quickly add enzyme to your react tests.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
   "homepage": "https://github.com/negativetwelve/jest-plugins",
-  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-it-renders",
+  "repository": "https://github.com/negativetwelve/jest-plugins/tree/master/packages/jest-plugin-enzyme",
   "keywords": [
-    "component",
+    "enzyme",
     "jest",
     "jest-plugin",
     "plugin",
     "react",
-    "render",
-    "snapshot",
     "test"
   ],
-  "main": "build/itRenders",
+  "main": "build/enzyme",
   "files": [
     "build",
     "setup.js"
   ],
   "dependencies": {
-    "react-test-renderer": "^16.2.0"
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3"
   },
   "peerDependencies": {
     "jest": "*",

@@ -14,7 +14,7 @@ Install `jest-plugin-it-shallow-renders` using `yarn`:
 yarn add --dev jest-plugin-it-shallow-renders
 ```
 
-*NOTE:* This plugin is only compatible with React version >= 16.0.0-alpha.
+*NOTE:* This plugin is only compatible with React version >= 16.0.0.
 
 ## Motivation
 

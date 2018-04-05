@@ -1,7 +1,5 @@
 // Libraries
-import {shallow} from 'enzyme';
-import toJSON from 'enzyme-to-json';
-
+import {shallow, toJSON} from 'jest-plugin-enzyme';
 
 const itShallowRenders = (render) => {
   it('shallow renders without error', () => {
