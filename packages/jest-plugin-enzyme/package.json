@@ -22,12 +22,12 @@
   "dependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
-    "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "enzyme-to-json": "^3.3.3"
   },
   "peerDependencies": {
-    "jest": "*"
+    "jest": "*",
+    "react": "*",
+    "react-dom": "*"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
