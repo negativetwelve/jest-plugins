@@ -1,6 +1,6 @@
 {
   "name": "jest-plugin-enzyme",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "Jest plugin to quickly add enzyme to your react tests.",
   "license": "MIT",
   "author": "Mark Miyashita <negativetwelve@gmail.com>",
