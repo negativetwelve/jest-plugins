@@ -23,17 +23,11 @@
     "setup.js"
   ],
   "dependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3"
+    "jest-plugin-enzyme": "^2.7.0"
   },
   "peerDependencies": {
     "jest": "*",
     "react": "*"
-  },
-  "devDependencies": {
-    "react": "^16.0.0-alpha",
-    "react-dom": "^16.0.0-alpha"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
