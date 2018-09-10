@@ -68,3 +68,10 @@ describe('User', () => {
   });
 });
 ```
+
+## Types for Typescript
+
+Types are available for this package. Install them using yarn:
+```
+yarn add --dev @types/jest-plugin-context
+```
