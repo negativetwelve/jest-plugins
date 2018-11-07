@@ -59,6 +59,16 @@ import fs from 'jest-plugin-fs';
 jest.mock('fs', () => require('jest-plugin-fs/mock'));
 ```
 
+or modify your jest section in your package.json
+
+```json
+"jest": {
+  "setupFiles": [
+    "jest-plugin-fs/setup-mock"
+  ]
+}
+```
+
 If you want to install `fs` attached to the global `jest` object, you can modify the `jest` section of your `package.json` to include:
 
 ```json
